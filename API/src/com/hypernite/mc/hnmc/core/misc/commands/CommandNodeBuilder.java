@@ -108,3 +108,27 @@ public class CommandNodeBuilder {
 
 
 }
+//如何使用
+/*
+class CommandNodeUse{
+    CommandNode getNode(){
+        return new CommandNodeBuilder("hello")
+                .description("向一個人 say hello")
+                .parent(null)
+                .placeholder("<player>")
+                .tabComplete((sender, args) -> null)
+                .permission("say.hello").execute((sender, args) -> {
+                    String name = args.get(0);
+                    Player target = Bukkit.getPlayer(name);
+                    if (!target.isOnline()){
+                        sender.sendMessage("對方不在線!");
+                        return true;
+                    }
+                    sender.sendMessage("已向 "+name+" say hello !");
+                    target.sendMessage(sender.getName()+" 向你 say hello 了!");
+                    return true;
+                }).build();
+    }
+}
+
+ */
