@@ -1,0 +1,985 @@
+memberSearchIndex = [{
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "AdvMessageBuilder",
+    "l": "add(BaseComponent)",
+    "url": "add(net.md_5.bungee.api.chat.BaseComponent)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "add(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "AdvMessageBuilder",
+    "l": "add(MessageBuilder)",
+    "url": "add(com.hypernite.mc.hnmc.core.builders.MessageBuilder)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "AdvMessageBuilder",
+    "l": "add(String...)",
+    "url": "add(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "add(String...)",
+    "url": "add(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "add(String)",
+    "url": "add(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "addAlias(String)",
+    "url": "addAlias(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "addAllAliases(List<String>)",
+    "url": "addAllAliases(java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "NameTagManager",
+    "l": "addPlayer(Player)",
+    "url": "addPlayer(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "addSub(CommandNode)",
+    "url": "addSub(com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "ADMIN"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "AdvMessageBuilder",
+    "l": "AdvMessageBuilder(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "AdvMessageBuilder",
+    "l": "build()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "build()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "build()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "build()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "build()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "BUILDER"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.function",
+    "c": "Calculation",
+    "l": "cal(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "CalculationBuilder(double)",
+    "url": "%3Cinit%3E(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "CENTER"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "Utils",
+    "l": "circle(Location, int, int, boolean, boolean, int)",
+    "url": "circle(org.bukkit.Location,int,int,boolean,boolean,int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "command(String)",
+    "url": "command(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
+    "c": "CommandArgumentException",
+    "l": "CommandArgumentException(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "CommandNode(CommandNode, String, String, String, String)",
+    "url": "%3Cinit%3E(com.hypernite.mc.hnmc.core.misc.commands.CommandNode,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "CommandNodeBuilder(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
+    "c": "CommandPermissionException",
+    "l": "CommandPermissionException(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "ConfigSetter",
+    "l": "ConfigSetter(Plugin, String...)",
+    "url": "%3Cinit%3E(org.bukkit.plugin.Plugin,java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "NMSUtils",
+    "l": "convertEntityToJson(Entity)",
+    "url": "convertEntityToJson(org.bukkit.entity.Entity)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "NMSUtils",
+    "l": "convertItemStackToJson(ItemStack)",
+    "url": "convertItemStackToJson(org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "DefaultCommand",
+    "l": "DefaultCommand(CommandNode, String, String, String)",
+    "url": "%3Cinit%3E(com.hypernite.mc.hnmc.core.misc.commands.CommandNode,java.lang.String,java.lang.String,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "description(String)",
+    "url": "description(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "displayName(String)",
+    "url": "displayName(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "divide(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "DONOR"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "doOther(Calculation)",
+    "url": "doOther(com.hypernite.mc.hnmc.core.builders.function.Calculation)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "execute(CmdExecution<Boolean>)",
+    "url": "execute(com.hypernite.mc.hnmc.core.misc.commands.functional.CmdExecution)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.functional",
+    "c": "CmdExecution",
+    "l": "execute(CommandSender, List<String>)",
+    "url": "execute(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "executeCommand(CommandSender, List<String>)",
+    "url": "executeCommand(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "DefaultCommand",
+    "l": "executeCommand(CommandSender, List<String>)",
+    "url": "executeCommand(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "executeTabCompletion(CommandSender, List<String>)",
+    "url": "executeTabCompletion(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "DefaultCommand",
+    "l": "executeTabCompletion(CommandSender, List<String>)",
+    "url": "executeTabCompletion(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "InvConvert",
+    "l": "fromBase64(String)",
+    "url": "fromBase64(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HttpRequest",
+    "l": "get(String)",
+    "url": "get(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "getAlias()"
+}, {"p": "com.hypernite.mc.hnmc.core.main", "c": "HyperNiteMC", "l": "getAPI()"}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getBungeeManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getBungeeManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "VaultAPI",
+    "l": "getChat()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ChatFormatManager",
+    "l": "getChatFormat(Player, String)",
+    "url": "getChatFormat(org.bukkit.entity.Player,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getChatFormatManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getChatFormatManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getChatRunnerManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getChatRunnerManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "getCommand()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
+    "c": "NotExecutableException",
+    "l": "getCommand()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
+    "c": "NotTabCompletableException",
+    "l": "getCommand()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getCommandRegister()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getCommandRegister()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getConfig(String)",
+    "url": "getConfig(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "ConfigSetter",
+    "l": "getConfigs()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getConfigSetter()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "SQLDataSource",
+    "l": "getConnection()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "getConnection(Player)",
+    "url": "getConnection(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "getConstructor(Class<?>, Class<?>...)",
+    "url": "getConstructor(java.lang.Class,java.lang.Class...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getCoreConfig()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getCoreConfig()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getCoreSchelder()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getCoreSchelder()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreConfig",
+    "l": "getDataBase()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "SQLDataSource",
+    "l": "getDataSource()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "getDescription()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "VaultAPI",
+    "l": "getEconomy()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "getField(Class<?>, String)",
+    "url": "getField(java.lang.Class,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ChatFormatManager",
+    "l": "getFormat(Player)",
+    "url": "getFormat(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getItemEventManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getItemEventManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getMessage(String)",
+    "url": "getMessage(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getMessageList(String, boolean)",
+    "url": "getMessageList(java.lang.String,boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "getMethod(Class<?>, String, Class<?>...)",
+    "url": "getMethod(java.lang.Class,java.lang.String,java.lang.Class...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getNameTagManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getNameTagManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "getNMSClass(String)",
+    "url": "getNMSClass(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreConfig",
+    "l": "getNoPerm()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreConfig",
+    "l": "getNotFoundPlayer()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreConfig",
+    "l": "getNotPlayer()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "getOBCClass(String)",
+    "url": "getOBCClass(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "getParent()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "getPermHierarchy(String)",
+    "url": "getPermHierarchy(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "VaultAPI",
+    "l": "getPermission()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "getPermission()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "getPlaceholder()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getPlayerSkinManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getPlayerSkinManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "ConfigSetter",
+    "l": "getPlugin()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreConfig",
+    "l": "getPrefix()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getPureMessage(String)",
+    "url": "getPureMessage(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "getResult()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "getSkull(UUID, String)",
+    "url": "getSkull(java.util.UUID,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "getSkull(UUID)",
+    "url": "getSkull(java.util.UUID)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getSQLDataSource()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getSQLDataSource()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "getSubCommands()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getTabListManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getTabListManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "getTextureValue(UUID)",
+    "url": "getTextureValue(java.util.UUID)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getVaultAPI()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getVaultAPI()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "getVersion()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "hasPermission(CommandSender, String)",
+    "url": "hasPermission(org.bukkit.command.CommandSender,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "head(UUID)",
+    "url": "head(java.util.UUID)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "HELPER"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "hoverText(String...)",
+    "url": "hoverText(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HttpRequest",
+    "l": "HttpRequest()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "HyperNiteMC()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "insertWhenShiftClick(String)",
+    "url": "insertWhenShiftClick(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "InvConvert",
+    "l": "InvConvert()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "InventoryBuilder(int, String)",
+    "url": "%3Cinit%3E(int,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "invokeCommand(CommandSender, List<String>)",
+    "url": "invokeCommand(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "invokeTabCompletion(CommandSender, List<String>)",
+    "url": "invokeTabCompletion(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "Utils",
+    "l": "isFullWalled(Block)",
+    "url": "isFullWalled(org.bukkit.block.Block)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "Utils",
+    "l": "isWalled(Block)",
+    "url": "isWalled(org.bukkit.block.Block)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "item(int, int, ItemStack)",
+    "url": "item(int,int,org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "item(int, ItemStack)",
+    "url": "item(int,org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "item(ItemStack)",
+    "url": "item(org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "ItemConvert",
+    "l": "ItemConvert()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "ItemConvert",
+    "l": "itemStackArrayFromBase64(String)",
+    "url": "itemStackArrayFromBase64(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "ItemConvert",
+    "l": "itemStackArrayToBase64(ItemStack[])",
+    "url": "itemStackArrayToBase64(org.bukkit.inventory.ItemStack[])"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "ItemStackBuilder()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "ItemStackBuilder(Material)",
+    "url": "%3Cinit%3E(org.bukkit.Material)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "ItemConvert",
+    "l": "itemStackFromBase64(String)",
+    "url": "itemStackFromBase64(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "ItemConvert",
+    "l": "itemStackToBase64(ItemStack)",
+    "url": "itemStackToBase64(org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "ConfigSetter",
+    "l": "loadConfig(Map<String, FileConfiguration>)",
+    "url": "loadConfig(java.util.Map)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "lore(List<String>)",
+    "url": "lore(java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "lore(String)",
+    "url": "lore(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNode",
+    "l": "match(String)",
+    "url": "match(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "material(Material)",
+    "url": "material(org.bukkit.Material)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "MessageBuilder()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "MessageBuilder(String...)",
+    "url": "%3Cinit%3E(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "MessageBuilder(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "minus(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "MOD"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "multiply(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "AdvMessageBuilder",
+    "l": "nextLine()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "nextLine()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "NMSUtils",
+    "l": "NMSUtils()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
+    "c": "NotExecutableException",
+    "l": "NotExecutableException(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
+    "c": "NotTabCompletableException",
+    "l": "NotTabCompletableException(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "onClick(ItemEventAction<InventoryClickEvent>)",
+    "url": "onClick(com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "ONE_ROW"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.listener",
+    "c": "ItemEventAction",
+    "l": "onEvent(E)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "onInteract(ItemEventAction<PlayerInteractEvent>)",
+    "url": "onInteract(com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "page(String)",
+    "url": "page(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "parent(CommandNode)",
+    "url": "parent(com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "Perm()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "permission(String)",
+    "url": "permission(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "pi()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "placeholder(String)",
+    "url": "placeholder(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "InvConvert",
+    "l": "playerInventoryToBase64(PlayerInventory)",
+    "url": "playerInventoryToBase64(org.bukkit.inventory.PlayerInventory)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "pow(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "Tools",
+    "l": "randomWithRange(int, int)",
+    "url": "randomWithRange(int,int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "ReflectionUtil()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.function",
+    "c": "ChatRunnerManager",
+    "l": "register(UUID, ChatRunner, int)",
+    "url": "register(java.util.UUID,com.hypernite.mc.hnmc.core.builders.function.ChatRunner,int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.function",
+    "c": "ChatRunnerManager",
+    "l": "register(UUID, ChatRunner)",
+    "url": "register(java.util.UUID,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CommandRegister",
+    "l": "registerCommand(JavaPlugin, CommandNode)",
+    "url": "registerCommand(org.bukkit.plugin.java.JavaPlugin,com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "registerConfig(ConfigSetter)",
+    "url": "registerConfig(com.hypernite.mc.hnmc.core.config.ConfigSetter)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "registerConfig(ConfigSetter)",
+    "url": "registerConfig(com.hypernite.mc.hnmc.core.config.ConfigSetter)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.listener",
+    "c": "ItemEventManager",
+    "l": "registerItem(String, ItemEventAction)",
+    "url": "registerItem(java.lang.String,com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "reloadAllConfigs()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "reloadConfig(String)",
+    "url": "reloadConfig(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.listener",
+    "c": "ItemEventManager",
+    "l": "removeItem(String)",
+    "url": "removeItem(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "round()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "roundDown()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "roundUp()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "run(ChatRunner)",
+    "url": "run(com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "run(int, ChatRunner)",
+    "url": "run(int,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.function",
+    "c": "ChatRunner",
+    "l": "run(Player)",
+    "url": "run(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreScheduler",
+    "l": "runAsync(Runnable)",
+    "url": "runAsync(java.lang.Runnable)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreScheduler",
+    "l": "runAsyncLater(Runnable, long)",
+    "url": "runAsyncLater(java.lang.Runnable,long)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreScheduler",
+    "l": "runTask(Runnable)",
+    "url": "runTask(java.lang.Runnable)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreScheduler",
+    "l": "runTaskLater(Runnable, long)",
+    "url": "runTaskLater(java.lang.Runnable,long)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "BungeeManager",
+    "l": "sendAllPlayers(String)",
+    "url": "sendAllPlayers(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "BungeeManager",
+    "l": "sendBeforeRestart(String)",
+    "url": "sendBeforeRestart(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "BungeeManager",
+    "l": "sendBeforeStop(String)",
+    "url": "sendBeforeStop(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "BungeeManager",
+    "l": "sendPlayer(Player, String)",
+    "url": "sendPlayer(org.bukkit.entity.Player,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "AdvMessageBuilder",
+    "l": "sendPlayer(Player)",
+    "url": "sendPlayer(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "sendPlayer(Player)",
+    "url": "sendPlayer(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "setHeadBlock(String, Block, boolean, BlockFace)",
+    "url": "setHeadBlock(java.lang.String,org.bukkit.block.Block,boolean,org.bukkit.block.BlockFace)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "setHeadBlock(UUID, Block, boolean, BlockFace)",
+    "url": "setHeadBlock(java.util.UUID,org.bukkit.block.Block,boolean,org.bukkit.block.BlockFace)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "setHeadBlock(UUID, String, Block, boolean, BlockFace)",
+    "url": "setHeadBlock(java.util.UUID,java.lang.String,org.bukkit.block.Block,boolean,org.bukkit.block.BlockFace)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "TabListManager",
+    "l": "setHeader(String, Player)",
+    "url": "setHeader(java.lang.String,org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "TabListManager",
+    "l": "setHeaderFooter(String, String, Player)",
+    "url": "setHeaderFooter(java.lang.String,java.lang.String,org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "setMsgConfig(String, String)",
+    "url": "setMsgConfig(java.lang.String,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "setMsgConfig(String)",
+    "url": "setMsgConfig(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "setSkullMeta(String, ItemStack)",
+    "url": "setSkullMeta(java.lang.String,org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "setSkullMeta(UUID, ItemStack)",
+    "url": "setSkullMeta(java.util.UUID,org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "setSkullMeta(UUID, String, ItemStack)",
+    "url": "setSkullMeta(java.util.UUID,java.lang.String,org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "showAdvancement(String)",
+    "url": "showAdvancement(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "showEntity(Entity)",
+    "url": "showEntity(org.bukkit.entity.Entity)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "showItem(ItemStack)",
+    "url": "showItem(org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "CalculationBuilder",
+    "l": "sqrt()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "stack(int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "suggest(String)",
+    "url": "suggest(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "tabComplete(CmdExecution<List<String>>)",
+    "url": "tabComplete(com.hypernite.mc.hnmc.core.misc.commands.functional.CmdExecution)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "InvConvert",
+    "l": "toBase64(Inventory)",
+    "url": "toBase64(org.bukkit.inventory.Inventory)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "Tools",
+    "l": "toLongString(String[], int)",
+    "url": "toLongString(java.lang.String[],int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "Tools",
+    "l": "Tools()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "updateHeadBlock(String, Block)",
+    "url": "updateHeadBlock(java.lang.String,org.bukkit.block.Block)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "updateHeadBlock(UUID, Block)",
+    "url": "updateHeadBlock(java.util.UUID,org.bukkit.block.Block)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "PlayerSkinManager",
+    "l": "updateHeadBlock(UUID, String, Block)",
+    "url": "updateHeadBlock(java.util.UUID,java.lang.String,org.bukkit.block.Block)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "NameTagManager",
+    "l": "updatePlayer(Player)",
+    "url": "updatePlayer(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ChatFormatManager",
+    "l": "updatePlayerList(Player)",
+    "url": "updatePlayerList(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "url(String)",
+    "url": "url(java.lang.String)"
+}, {"p": "com.hypernite.mc.hnmc.core.utils", "c": "Utils", "l": "Utils()", "url": "%3Cinit%3E()"}]

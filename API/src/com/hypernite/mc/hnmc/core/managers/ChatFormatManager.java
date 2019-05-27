@@ -1,0 +1,26 @@
+package com.hypernite.mc.hnmc.core.managers;
+
+import org.bukkit.entity.Player;
+
+public interface ChatFormatManager {
+
+    /**
+     * @param player  玩家
+     * @param message 訊息
+     * @return 帶有訊息的聊天格式
+     */
+    String getChatFormat(Player player, String message);
+
+    /**
+     * @param player 玩家
+     * @return 不帶有訊息的聊天格式
+     */
+    String getFormat(Player player);
+
+    /**
+     * 更新 tab list
+     *
+     * @param player 玩家
+     */
+    void updatePlayerList(Player player);
+}
