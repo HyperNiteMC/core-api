@@ -54,6 +54,10 @@ public abstract class CommandNode {
         return placeholder;
     }
 
+    void setParent(CommandNode node) {
+        this.parent = node;
+    }
+
     public ArrayList<CommandNode> getSubCommands() {
         return subCommands;
     }
