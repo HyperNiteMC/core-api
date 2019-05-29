@@ -52,10 +52,30 @@ memberSearchIndex = [{
     "c": "Perm",
     "l": "ADMIN"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
+    "l": "AdvCommandNodeBuilder(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
     "l": "AdvMessageBuilder(String)",
     "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
+    "l": "alias(String...)",
+    "url": "alias(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "CommandNodeBuilder",
+    "l": "alias(String...)",
+    "url": "alias(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "DefaultCommandBuilder",
+    "l": "alias(String...)",
+    "url": "alias(java.lang.String...)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
@@ -71,6 +91,10 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
+    "l": "build()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
     "l": "build()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
@@ -120,8 +144,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
-    "l": "CommandNode(CommandNode, String, String, String, String)",
-    "url": "%3Cinit%3E(com.hypernite.mc.hnmc.core.misc.commands.CommandNode,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+    "l": "CommandNode(CommandNode, String, String, String, String, String...)",
+    "url": "%3Cinit%3E(com.hypernite.mc.hnmc.core.misc.commands.CommandNode,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String...)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNodeBuilder",
@@ -150,13 +174,18 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "DefaultCommand",
-    "l": "DefaultCommand(CommandNode, String, String, String)",
-    "url": "%3Cinit%3E(com.hypernite.mc.hnmc.core.misc.commands.CommandNode,java.lang.String,java.lang.String,java.lang.String)"
+    "l": "DefaultCommand(CommandNode, String, String, String, String...)",
+    "url": "%3Cinit%3E(com.hypernite.mc.hnmc.core.misc.commands.CommandNode,java.lang.String,java.lang.String,java.lang.String,java.lang.String...)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "DefaultCommandBuilder",
     "l": "DefaultCommandBuilder(String)",
     "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
+    "l": "description(String)",
+    "url": "description(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNodeBuilder",
@@ -187,6 +216,11 @@ memberSearchIndex = [{
     "url": "doOther(com.hypernite.mc.hnmc.core.builders.function.Calculation)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
+    "l": "execute(AdvCmdExecution<Boolean, Sender>)",
+    "url": "execute(com.hypernite.mc.hnmc.core.misc.commands.functional.AdvCmdExecution)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNodeBuilder",
     "l": "execute(CmdExecution<Boolean>)",
     "url": "execute(com.hypernite.mc.hnmc.core.misc.commands.functional.CmdExecution)"
@@ -195,6 +229,11 @@ memberSearchIndex = [{
     "c": "CmdExecution",
     "l": "execute(CommandSender, List<String>)",
     "url": "execute(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.functional",
+    "c": "AdvCmdExecution",
+    "l": "execute(D, List<String>)",
+    "url": "execute(D,java.util.List)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -271,10 +310,6 @@ memberSearchIndex = [{
     "c": "NotExecutableException",
     "l": "getCommand()"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
-    "c": "NotTabCompletableException",
-    "l": "getCommand()"
-}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getCommandRegister()"
@@ -327,8 +362,28 @@ memberSearchIndex = [{
     "l": "getCoreSchelder()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getData(String, Class<T>)",
+    "url": "getData(java.lang.String,java.lang.Class)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getData(String)",
+    "url": "getData(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "CoreConfig",
     "l": "getDataBase()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getDataList(String, Class<T>)",
+    "url": "getDataList(java.lang.String,java.lang.Class)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "ConfigManager",
+    "l": "getDataMap(String, Class<K>, Class<V>)",
+    "url": "getDataMap(java.lang.String,java.lang.Class,java.lang.Class)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "SQLDataSource",
@@ -502,6 +557,11 @@ memberSearchIndex = [{
     "c": "Perm",
     "l": "hasPermission(CommandSender, String)",
     "url": "hasPermission(org.bukkit.command.CommandSender,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "head(UUID, String)",
+    "url": "head(java.util.UUID,java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
@@ -682,11 +742,6 @@ memberSearchIndex = [{
     "l": "NotExecutableException(String)",
     "url": "%3Cinit%3E(java.lang.String)"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
-    "c": "NotTabCompletableException",
-    "l": "NotTabCompletableException(String)",
-    "url": "%3Cinit%3E(java.lang.String)"
-}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
     "l": "onClick(ItemEventAction<InventoryClickEvent>)",
@@ -711,6 +766,11 @@ memberSearchIndex = [{
     "url": "page(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
+    "l": "parent(CommandNode)",
+    "url": "parent(com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNodeBuilder",
     "l": "parent(CommandNode)",
     "url": "parent(com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
@@ -726,6 +786,11 @@ memberSearchIndex = [{
     "url": "%3Cinit%3E()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
+    "l": "permission(String)",
+    "url": "permission(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNodeBuilder",
     "l": "permission(String)",
     "url": "permission(java.lang.String)"
@@ -738,6 +803,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
     "l": "pi()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
+    "l": "placeholder(String)",
+    "url": "placeholder(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNodeBuilder",
@@ -963,6 +1033,11 @@ memberSearchIndex = [{
     "url": "suggest(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "c": "AdvCommandNodeBuilder",
+    "l": "tabComplete(AdvCmdExecution<List<String>, Sender>)",
+    "url": "tabComplete(com.hypernite.mc.hnmc.core.misc.commands.functional.AdvCmdExecution)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNodeBuilder",
     "l": "tabComplete(CmdExecution<List<String>>)",
     "url": "tabComplete(com.hypernite.mc.hnmc.core.misc.commands.functional.CmdExecution)"
@@ -1011,4 +1086,9 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "url(String)",
     "url": "url(java.lang.String)"
-}, {"p": "com.hypernite.mc.hnmc.core.utils", "c": "Utils", "l": "Utils()", "url": "%3Cinit%3E()"}]
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "Utils",
+    "l": "Utils()",
+    "url": "%3Cinit%3E()"
+}, {"p": "com.hypernite.mc.hnmc.core.config", "c": "ConfigSetter", "l": "variablesMap()"}]

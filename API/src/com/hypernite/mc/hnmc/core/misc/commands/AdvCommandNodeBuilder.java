@@ -1,7 +1,9 @@
 package com.hypernite.mc.hnmc.core.misc.commands;
 
+import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
+import com.hypernite.mc.hnmc.core.managers.CoreConfig;
 import com.hypernite.mc.hnmc.core.misc.commands.exception.NotExecutableException;
-import com.hypernite.mc.hnmc.core.misc.commands.functional.CmdExecution;
+import com.hypernite.mc.hnmc.core.misc.commands.functional.AdvCmdExecution;
 import org.bukkit.command.CommandSender;
 
 import javax.annotation.Nonnull;
@@ -10,10 +12,11 @@ import java.util.List;
 /**
  * 指令節點建造器
  *
+ * @param <Sender> 發送者指定類別
  * @author Eric Lam
  * @see CommandNode
  */
-public class CommandNodeBuilder {
+public class AdvCommandNodeBuilder<Sender extends CommandSender> {
 
     private String command;
     private String permission;
@@ -21,21 +24,22 @@ public class CommandNodeBuilder {
     private String placeholder;
     private CommandNode parent;
     private String[] alias = new String[0];
-    private CmdExecution<List<String>> tabCompleterSender;
-    private CmdExecution<Boolean> cmdExecutorSender;
+    private AdvCmdExecution<List<String>, Sender> tabCompleterSender;
+    private AdvCmdExecution<Boolean, Sender> cmdExecutorSender;
 
     /**
      * @param command 指令
      */
-    public CommandNodeBuilder(String command) {
+    public AdvCommandNodeBuilder(String command) {
         this.command = command;
+
     }
 
     /**
      * @param permission 權限
      * @return this
      */
-    public CommandNodeBuilder permission(String permission) {
+    public AdvCommandNodeBuilder<Sender> permission(String permission) {
         this.permission = permission;
         return this;
     }
@@ -44,7 +48,7 @@ public class CommandNodeBuilder {
      * @param description 介紹
      * @return this
      */
-    public CommandNodeBuilder description(String description) {
+    public AdvCommandNodeBuilder<Sender> description(String description) {
         this.description = description;
         return this;
     }
@@ -53,7 +57,7 @@ public class CommandNodeBuilder {
      * @param placeholder 用法
      * @return this
      */
-    public CommandNodeBuilder placeholder(String placeholder) {
+    public AdvCommandNodeBuilder<Sender> placeholder(String placeholder) {
         this.placeholder = placeholder;
         return this;
     }
@@ -62,7 +66,7 @@ public class CommandNodeBuilder {
      * @param parent 父類指令
      * @return this
      */
-    public CommandNodeBuilder parent(CommandNode parent) {
+    public AdvCommandNodeBuilder<Sender> parent(CommandNode parent) {
         this.parent = parent;
         return this;
     }
@@ -73,7 +77,7 @@ public class CommandNodeBuilder {
      * @param alias 縮寫指令
      * @return this
      */
-    public CommandNodeBuilder alias(String... alias) {
+    public AdvCommandNodeBuilder<Sender> alias(String... alias) {
         this.alias = alias;
         return this;
     }
@@ -82,7 +86,7 @@ public class CommandNodeBuilder {
      * @param executor tab 執行
      * @return this
      */
-    public CommandNodeBuilder tabComplete(CmdExecution<List<String>> executor) {
+    public AdvCommandNodeBuilder<Sender> tabComplete(AdvCmdExecution<List<String>, Sender> executor) {
         this.tabCompleterSender = executor;
         return this;
     }
@@ -91,26 +95,38 @@ public class CommandNodeBuilder {
      * @param cmdExecutor 指令執行
      * @return this
      */
-    public CommandNodeBuilder execute(CmdExecution<Boolean> cmdExecutor) {
+    public AdvCommandNodeBuilder<Sender> execute(AdvCmdExecution<Boolean, Sender> cmdExecutor) {
         this.cmdExecutorSender = cmdExecutor;
         return this;
     }
 
     /**
      * @return 指令節點
-     * @throws NotExecutableException     指令無法執行
+     * @throws NotExecutableException 指令無法執行
      */
+    @SuppressWarnings("unchecked")
     public CommandNode build() {
+        CoreConfig config = HyperNiteMC.getAPI().getCoreConfig();
         if (cmdExecutorSender == null) throw new NotExecutableException(command);
         return new CommandNode(parent, command, permission, description, placeholder, alias) {
             @Override
             public boolean executeCommand(@Nonnull CommandSender sender, @Nonnull List<String> args) {
-                return cmdExecutorSender.execute(sender, args);
+                try {
+                    return cmdExecutorSender.execute((Sender) sender, args);
+                } catch (ClassCastException e) {
+                    sender.sendMessage(config.getPrefix() + config.getNotPlayer());
+                }
+                return false;
             }
 
             @Override
             public List<String> executeTabCompletion(@Nonnull CommandSender sender, @Nonnull List<String> args) {
-                return tabCompleterSender == null ? null : tabCompleterSender.execute(sender, args);
+                try {
+                    return tabCompleterSender == null ? null : tabCompleterSender.execute((Sender) sender, args);
+                } catch (ClassCastException e) {
+                    sender.sendMessage(config.getPrefix() + config.getNotPlayer());
+                }
+                return null;
             }
         };
     }
@@ -119,25 +135,19 @@ public class CommandNodeBuilder {
 }
 //如何使用
 /*
-class CommandNodeUse{
+class AdvCommandNodeUse{
     CommandNode getNode(){
-        return new CommandNodeBuilder("hello")
-                .description("向一個人 say hello")
-                .parent(null)
-                .placeholder("<player>")
-                .tabComplete((sender, args) -> null)
-                .permission("say.hello").execute((sender, args) -> {
-                    String name = args.get(0);
-                    Player target = Bukkit.getPlayer(name);
-                    if (!target.isOnline()){
-                        sender.sendMessage("對方不在線!");
-                        return true;
-                    }
-                    sender.sendMessage("已向 "+name+" say hello !");
-                    target.sendMessage(sender.getName()+" 向你 say hello 了!");
+        return new AdvCommandNodeBuilder<Player>("fly")
+                .description("setfly")
+                .execute((sender, args) -> {
+                    sender.setAllowFlight(!sender.getAllowFlight());
+                    sender.sendMessage("You "+(sender.getAllowFlight() ? "can" : "cannot")+" fly now.");
                     return true;
                 }).build();
     }
 }
 
  */
+
+
+

@@ -10,6 +10,7 @@ public class DefaultCommandBuilder {
     private String permission;
     private CommandNode parent;
     private CommandNode[] children;
+    private String[] alias = new String[0];
 
     /**
      * @param command 指令
@@ -57,10 +58,21 @@ public class DefaultCommandBuilder {
     }
 
     /**
+     * 若果是主指令，將會自動從 plugin.yml 添加
+     *
+     * @param alias 縮寫
+     * @return this
+     */
+    public DefaultCommandBuilder alias(String... alias) {
+        this.alias = alias;
+        return this;
+    }
+
+    /**
      * @return 返回分支指令的幫助訊息的指令
      */
     public DefaultCommand build() {
-        DefaultCommand defaultCommand = new DefaultCommand(parent, command, permission, description);
+        DefaultCommand defaultCommand = new DefaultCommand(parent, command, permission, description,alias);
         for (CommandNode node : children) {
             node.setParent(defaultCommand);
             defaultCommand.addSub(node);

@@ -2,6 +2,7 @@ package com.hypernite.mc.hnmc.core.misc.permission;
 
 import org.bukkit.command.CommandSender;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,13 +18,14 @@ public class Perm {
 
     public static boolean hasPermission(CommandSender sender, String permission) {
         boolean reuslt = false;
+        if (permission == null) return true;
         for (String Pnode : getPermHierarchy(permission)) {
             reuslt = reuslt || sender.hasPermission(Pnode);
         }
         return reuslt;
     }
 
-    public static List<String> getPermHierarchy(String string) {
+    public static List<String> getPermHierarchy(@Nonnull String string) {
         String[] node = string.split("\\.");
         List<String> permissionNode = new ArrayList<>();
         StringBuilder stringBuilder = new StringBuilder();

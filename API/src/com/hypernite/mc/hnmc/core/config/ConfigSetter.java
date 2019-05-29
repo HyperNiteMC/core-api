@@ -25,6 +25,19 @@ public abstract class ConfigSetter {
      */
     public abstract void loadConfig(Map<String, FileConfiguration> ymls);
 
+    /**
+     * 方便獲取用
+     *
+     * @return 變數列表
+     * @see com.hypernite.mc.hnmc.core.managers.ConfigManager#getData(String)
+     * @see com.hypernite.mc.hnmc.core.managers.ConfigManager#getData(String, Class)
+     * @see com.hypernite.mc.hnmc.core.managers.ConfigManager#getDataList(String, Class)
+     * @see com.hypernite.mc.hnmc.core.managers.ConfigManager#getDataMap(String, Class, Class)
+     */
+    public Map<String, Object> variablesMap() {
+        return Map.of();
+    }
+
     public Plugin getPlugin() {
         return plugin;
     }

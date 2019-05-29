@@ -125,7 +125,22 @@ public class ItemStackBuilder {
         if (this.item.getType() != Material.PLAYER_HEAD || this.item.getType() != Material.PLAYER_WALL_HEAD) {
             throw new IllegalStateException("Cannot set the head skin in " + this.item.getType().toString());
         }
-        HyperNiteMC.getAPI().getCoreSchelder().runAsync(() -> HyperNiteMC.getAPI().getPlayerSkinManager().setSkullMeta(uuid, this.item));
+        HyperNiteMC.getAPI().getPlayerSkinManager().setSkullMeta(uuid, this.item);
+        return this;
+    }
+
+    /**
+     * 設置頭顱皮膚
+     *
+     * @param uuid   玩家 UUID
+     * @param player 玩家名稱
+     * @return this
+     */
+    public ItemStackBuilder head(UUID uuid, String player) {
+        if (this.item.getType() != Material.PLAYER_HEAD && this.item.getType() != Material.PLAYER_WALL_HEAD) {
+            throw new IllegalStateException("Cannot set the head skin in " + this.item.getType().toString());
+        }
+        HyperNiteMC.getAPI().getPlayerSkinManager().setSkullMeta(uuid, player, this.item);
         return this;
     }
 

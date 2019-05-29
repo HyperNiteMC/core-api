@@ -36,14 +36,16 @@ public abstract class CommandNode {
      * @param permission  權限
      * @param description 介紹
      * @param placeholder 佔位符
+     * @param alias 縮寫指令
      */
-    public CommandNode(CommandNode parent, @Nonnull String command, String permission, @Nonnull String description, String placeholder) {
+    public CommandNode(CommandNode parent, @Nonnull String command, String permission, @Nonnull String description, String placeholder, String... alias) {
         this.command = command;
         this.parent = parent;
         this.alias.add(command);
         this.permission = permission;
         this.description = description;
         this.placeholder = placeholder;
+        this.alias.addAll(List.of(alias));
     }
 
     public String getDescription() {
@@ -78,6 +80,7 @@ public abstract class CommandNode {
         return command;
     }
 
+    @Deprecated
     public void addAlias(@Nonnull String ali) {
         if (!alias.contains(ali)) {
             this.alias.add(ali);

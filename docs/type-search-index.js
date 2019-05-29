@@ -1,4 +1,10 @@
-typeSearchIndex = [{"p": "com.hypernite.mc.hnmc.core.builders", "l": "AdvMessageBuilder"}, {
+typeSearchIndex = [{
+    "p": "com.hypernite.mc.hnmc.core.misc.commands.functional",
+    "l": "AdvCmdExecution"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.commands",
+    "l": "AdvCommandNodeBuilder"
+}, {"p": "com.hypernite.mc.hnmc.core.builders", "l": "AdvMessageBuilder"}, {
     "l": "All Classes",
     "url": "allclasses-index.html"
 }, {
@@ -67,9 +73,6 @@ typeSearchIndex = [{"p": "com.hypernite.mc.hnmc.core.builders", "l": "AdvMessage
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
     "l": "NotExecutableException"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
-    "l": "NotTabCompletableException"
 }, {"p": "com.hypernite.mc.hnmc.core.misc.permission", "l": "Perm"}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "l": "PlayerSkinManager"
