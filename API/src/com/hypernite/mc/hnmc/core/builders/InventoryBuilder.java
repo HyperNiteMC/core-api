@@ -12,6 +12,10 @@ public class InventoryBuilder {
     private int row;
 
 
+    /**
+     * @param row   此背包界面最大行數
+     * @param title 標題
+     */
     public InventoryBuilder(int row, String title) {
         if (row > 6) row = 6;
         this.row = row;

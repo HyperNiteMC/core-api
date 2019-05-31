@@ -122,6 +122,11 @@ memberSearchIndex = [{
     "c": "InventoryBuilder",
     "l": "CENTER"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "center(ItemStack)",
+    "url": "center(org.bukkit.inventory.ItemStack)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "DefaultCommandBuilder",
     "l": "children(CommandNode...)",
@@ -254,6 +259,11 @@ memberSearchIndex = [{
     "c": "DefaultCommand",
     "l": "executeTabCompletion(CommandSender, List<String>)",
     "url": "executeTabCompletion(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "fillRow(int, ItemStack)",
+    "url": "fillRow(int,org.bukkit.inventory.ItemStack)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.utils.converters",
     "c": "InvConvert",
@@ -876,6 +886,11 @@ memberSearchIndex = [{
     "c": "ItemEventManager",
     "l": "removeItem(String)",
     "url": "removeItem(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "ring(ItemStack)",
+    "url": "ring(org.bukkit.inventory.ItemStack)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
