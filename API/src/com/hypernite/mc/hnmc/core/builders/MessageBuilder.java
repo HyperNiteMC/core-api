@@ -35,9 +35,12 @@ public class MessageBuilder {
      */
     public MessageBuilder(String... msgs) {
         componentBuilder = new ComponentBuilder("");
-        for (String omsg : msgs) {
-            String msg = ChatColor.translateAlternateColorCodes('&', omsg);
+        for (int i = 0; i < msgs.length; i++) {
+            String msg = ChatColor.translateAlternateColorCodes('&', msgs[i]);
             componentBuilder.append(TextComponent.fromLegacyText(msg));
+            if (i != msgs.length - 1) {
+                componentBuilder.append("\n");
+            }
         }
     }
 
@@ -56,9 +59,12 @@ public class MessageBuilder {
      * @return this
      */
     public MessageBuilder add(String... msgs) {
-        for (String omsg : msgs) {
-            String msg = ChatColor.translateAlternateColorCodes('&', omsg);
+        for (int i = 0; i < msgs.length; i++) {
+            String msg = ChatColor.translateAlternateColorCodes('&', msgs[i]);
             componentBuilder.append(TextComponent.fromLegacyText(msg));
+            if (i != msgs.length - 1) {
+                componentBuilder.append("\n");
+            }
         }
         return this;
     }
@@ -105,9 +111,12 @@ public class MessageBuilder {
      */
     public MessageBuilder hoverText(String... texts) {
         ComponentBuilder builder = new ComponentBuilder("");
-        for (String omsg : texts) {
-            String msg = ChatColor.translateAlternateColorCodes('&', omsg);
-            builder.append(msg + "\n");
+        for (int i = 0; i < texts.length; i++) {
+            String msg = ChatColor.translateAlternateColorCodes('&', texts[i]);
+            builder.append(msg);
+            if (i != texts.length - 1) {
+                builder.append("\n");
+            }
         }
         componentBuilder.event(new HoverEvent(HoverEvent.Action.SHOW_TEXT, builder.create()));
         return this;
