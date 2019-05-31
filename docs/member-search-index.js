@@ -845,13 +845,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders.function",
     "c": "ChatRunnerManager",
-    "l": "register(UUID, ChatRunner, int)",
-    "url": "register(java.util.UUID,com.hypernite.mc.hnmc.core.builders.function.ChatRunner,int)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.builders.function",
-    "c": "ChatRunnerManager",
-    "l": "register(UUID, ChatRunner)",
-    "url": "register(java.util.UUID,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
+    "l": "registerClicks(UUID, ChatRunner, int)",
+    "url": "registerClicks(java.util.UUID,com.hypernite.mc.hnmc.core.builders.function.ChatRunner,int)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "CommandRegister",
@@ -872,6 +867,11 @@ memberSearchIndex = [{
     "c": "ItemEventManager",
     "l": "registerItem(String, ItemEventAction)",
     "url": "registerItem(java.lang.String,com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.function",
+    "c": "ChatRunnerManager",
+    "l": "registerTimeout(UUID, ChatRunner, int)",
+    "url": "registerTimeout(java.util.UUID,com.hypernite.mc.hnmc.core.builders.function.ChatRunner,int)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ConfigManager",
@@ -909,11 +909,6 @@ memberSearchIndex = [{
     "l": "run(ChatRunner)",
     "url": "run(com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.builders",
-    "c": "MessageBuilder",
-    "l": "run(int, ChatRunner)",
-    "url": "run(int,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
-}, {
     "p": "com.hypernite.mc.hnmc.core.builders.function",
     "c": "ChatRunner",
     "l": "run(Player)",
@@ -929,6 +924,11 @@ memberSearchIndex = [{
     "l": "runAsyncLater(Runnable, long)",
     "url": "runAsyncLater(java.lang.Runnable,long)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "runClicks(int, ChatRunner)",
+    "url": "runClicks(int,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "CoreScheduler",
     "l": "runTask(Runnable)",
@@ -938,6 +938,11 @@ memberSearchIndex = [{
     "c": "CoreScheduler",
     "l": "runTaskLater(Runnable, long)",
     "url": "runTaskLater(java.lang.Runnable,long)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "MessageBuilder",
+    "l": "runTimeout(int, ChatRunner)",
+    "url": "runTimeout(int,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "BungeeManager",

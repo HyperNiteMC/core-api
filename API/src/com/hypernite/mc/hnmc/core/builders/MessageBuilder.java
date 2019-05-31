@@ -15,7 +15,8 @@ public class MessageBuilder {
     private ComponentBuilder componentBuilder;
     private UUID id;
     private ChatRunner runner;
-    private int timeoutSeconds = 0;
+    private int timeoutSeconds = -1;
+    private int timeoutClicks = -1;
 
     /**
      * @param msg 原始訊息
@@ -169,12 +170,29 @@ public class MessageBuilder {
     }
 
     /**
+     * 默認為 十分鐘 之後自動過期
+     *
      * @param runner 運行函式
      * @return this
      */
     public MessageBuilder run(ChatRunner runner) {
         this.id = UUID.randomUUID();
         this.runner = runner;
+        this.timeoutSeconds = 600;
+        this.timeoutClicks = -1;
+        return this;
+    }
+
+    /**
+     * @param timeoutClicks 點擊多少次後自動過期
+     * @param runner 運行函式
+     * @return this
+     */
+    public MessageBuilder runClicks(int timeoutClicks, ChatRunner runner) {
+        this.id = UUID.randomUUID();
+        this.runner = runner;
+        this.timeoutClicks = timeoutClicks;
+        this.timeoutSeconds = -1;
         return this;
     }
 
@@ -183,10 +201,11 @@ public class MessageBuilder {
      * @param runner         運行函式
      * @return this
      */
-    public MessageBuilder run(int timeoutSeconds, ChatRunner runner) {
+    public MessageBuilder runTimeout(int timeoutSeconds, ChatRunner runner) {
         this.id = UUID.randomUUID();
         this.runner = runner;
         this.timeoutSeconds = timeoutSeconds;
+        this.timeoutClicks = -1;
         return this;
     }
 
@@ -207,9 +226,9 @@ public class MessageBuilder {
         if (this.runner != null) {
             this.command("/command-run_" + id.toString());
             if (timeoutSeconds > 0) {
-                HyperNiteMC.getAPI().getChatRunnerManager().register(id, runner, timeoutSeconds);
-            } else {
-                HyperNiteMC.getAPI().getChatRunnerManager().register(id, runner);
+                HyperNiteMC.getAPI().getChatRunnerManager().registerTimeout(id, runner, timeoutSeconds);
+            } else if (timeoutClicks > 0) {
+                HyperNiteMC.getAPI().getChatRunnerManager().registerClicks(id, runner, timeoutClicks);
             }
         }
         return componentBuilder.create();

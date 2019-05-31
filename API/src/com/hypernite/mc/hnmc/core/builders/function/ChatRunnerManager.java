@@ -7,8 +7,8 @@ import java.util.UUID;
  */
 public interface ChatRunnerManager {
 
-    void register(UUID id, ChatRunner runner);
+    void registerClicks(UUID id, ChatRunner runner, int clicks);
 
-    void register(UUID id, ChatRunner runner, int timeout);
+    void registerTimeout(UUID id, ChatRunner runner, int timeout);
 
 }
