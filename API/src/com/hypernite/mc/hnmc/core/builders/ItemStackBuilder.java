@@ -162,25 +162,3 @@ public class ItemStackBuilder {
         return itemStack;
     }
 }
-
-//如何使用
-
-/*
-class TestItemStackBuilder {
-    public void useItemBuilder() {
-        ItemStack item = new ItemStackBuilder(Material.LIGHT_BLUE_DYE)
-                .stack(5)
-                .displayName("&4Big Dick")
-                .lore("&7This").lore("&7Is").lore("&aA").lore("&2Big").lore("&9Dick")
-                .onClick(e -> {
-                    if (e.getWhoClicked().getName().equals("caxerx")) {
-                        e.setCancelled(true);
-                    }
-                }).onInteract(e->{
-                  if (e.getAction() == Action.RIGHT_CLICK_AIR){
-                      e.getPlayer().sendMessage("你右鍵了物品!");
-                  }
-                }).build();
-    }
-}
-*/

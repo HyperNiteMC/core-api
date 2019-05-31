@@ -133,21 +133,6 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
 
 
 }
-//如何使用
-/*
-class AdvCommandNodeUse{
-    CommandNode getNode(){
-        return new AdvCommandNodeBuilder<Player>("fly")
-                .description("setfly")
-                .execute((sender, args) -> {
-                    sender.setAllowFlight(!sender.getAllowFlight());
-                    sender.sendMessage("You "+(sender.getAllowFlight() ? "can" : "cannot")+" fly now.");
-                    return true;
-                }).build();
-    }
-}
-
- */
 
 
 

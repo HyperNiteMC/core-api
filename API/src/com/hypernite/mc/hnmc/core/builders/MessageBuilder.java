@@ -212,20 +212,4 @@ public class MessageBuilder {
 
 
 }
-//如何使用
-/*
-class MessageBuilderUse{
-    void use(Player sender){
-        BaseComponent[] msg = new MessageBuilder("&e[ 公告全世界你是女裝大佬 ]").hoverText("&a來啊點我啊").run(player -> {
-            Bukkit.broadcastMessage(net.md_5.bungee.api.ChatColor.AQUA + player.getName()+" 是女裝大佬！！");
-            BaseComponent[] tp = new MessageBuilder("&e[ 點我傳送到「她」的位置 ]").hoverText("&a點啊快點啊").run(player1 -> {
-                player1.teleport(player);
-            }).build();
-            Bukkit.getOnlinePlayers().forEach(p->p.sendMessage(tp));
-        }).build();
-        sender.sendMessage(msg);
-    }
-}
-
- */
 

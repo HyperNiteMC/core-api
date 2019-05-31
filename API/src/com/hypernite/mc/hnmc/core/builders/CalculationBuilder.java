@@ -114,11 +114,3 @@ public class CalculationBuilder {
         return result;
     }
 }
-// 如何使用
-/*
-class CalculationUse{
-    double result = new CalculationBuilder(5).add(7).divide(6).minus(2).multiply(10).pow(2).round().getResult();
-    // ((((5 + 7) / 6 ) - 2 ) * 10 ) ^ 2
-}
-
- */

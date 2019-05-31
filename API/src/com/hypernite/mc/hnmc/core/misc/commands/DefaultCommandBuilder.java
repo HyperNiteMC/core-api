@@ -80,23 +80,3 @@ public class DefaultCommandBuilder {
         return defaultCommand;
     }
 }
-// 如何使用
-/*
-class DefaultCommandBuilderUse{
-    DefaultCommand getDefaultCommand(){
-        CommandNode node1 = new CommandNodeBuilder("setting").description("get setting help").tabComplete((sender, args) -> null)
-                .execute((sender, args) -> {
-                    sender.sendMessage("help settings");
-                    return true;
-                }).build();
-
-        CommandNode node2 = new CommandNodeBuilder("player").description("get player help").tabComplete((sender, args) -> null)
-                .execute((sender, args) -> {
-                    sender.sendMessage("help player");
-                    return true;
-                }).build();
-        return new DefaultCommandBuilder("help").permission("help.use").description("get help message").children(node1,node2).build();
-    }
-}
-
- */
