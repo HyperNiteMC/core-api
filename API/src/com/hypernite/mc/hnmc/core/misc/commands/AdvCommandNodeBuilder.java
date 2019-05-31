@@ -4,6 +4,7 @@ import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
 import com.hypernite.mc.hnmc.core.managers.CoreConfig;
 import com.hypernite.mc.hnmc.core.misc.commands.exception.NotExecutableException;
 import com.hypernite.mc.hnmc.core.misc.commands.functional.AdvCmdExecution;
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
 import javax.annotation.Nonnull;
@@ -114,7 +115,7 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
                 try {
                     return cmdExecutorSender.execute((Sender) sender, args);
                 } catch (ClassCastException e) {
-                    sender.sendMessage(config.getPrefix() + config.getNotPlayer());
+                    sender.sendMessage(config.getPrefix() + ChatColor.RED + "無法使用此指令。");
                 }
                 return false;
             }
@@ -124,7 +125,7 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
                 try {
                     return tabCompleterSender == null ? null : tabCompleterSender.execute((Sender) sender, args);
                 } catch (ClassCastException e) {
-                    sender.sendMessage(config.getPrefix() + config.getNotPlayer());
+                    sender.sendMessage(config.getPrefix() + ChatColor.RED + "無法使用此指令。");
                 }
                 return null;
             }
