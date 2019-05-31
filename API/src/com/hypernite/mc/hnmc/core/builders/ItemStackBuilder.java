@@ -122,7 +122,7 @@ public class ItemStackBuilder {
      * @return this
      */
     public ItemStackBuilder head(UUID uuid) {
-        if (this.item.getType() != Material.PLAYER_HEAD || this.item.getType() != Material.PLAYER_WALL_HEAD) {
+        if (this.item.getType() != Material.PLAYER_HEAD && this.item.getType() != Material.PLAYER_WALL_HEAD) {
             throw new IllegalStateException("Cannot set the head skin in " + this.item.getType().toString());
         }
         HyperNiteMC.getAPI().getPlayerSkinManager().setSkullMeta(uuid, this.item);
