@@ -10,6 +10,11 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
+    "l": "add(MessageBuilder...)",
+    "url": "add(com.hypernite.mc.hnmc.core.builders.MessageBuilder...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "AdvMessageBuilder",
     "l": "add(MessageBuilder)",
     "url": "add(com.hypernite.mc.hnmc.core.builders.MessageBuilder)"
 }, {
@@ -76,6 +81,11 @@ memberSearchIndex = [{
     "c": "DefaultCommandBuilder",
     "l": "alias(String...)",
     "url": "alias(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "applyGameRules(Map<GameRule<T>, T>, World)",
+    "url": "applyGameRules(java.util.Map,org.bukkit.World)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
@@ -187,6 +197,11 @@ memberSearchIndex = [{
     "l": "DefaultCommandBuilder(String)",
     "url": "%3Cinit%3E(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "deleteWorld(String)",
+    "url": "deleteWorld(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "AdvCommandNodeBuilder",
     "l": "description(String)",
@@ -201,6 +216,11 @@ memberSearchIndex = [{
     "c": "DefaultCommandBuilder",
     "l": "description(String)",
     "url": "description(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "disableWorld(String)",
+    "url": "disableWorld(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
@@ -219,6 +239,11 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "doOther(Calculation)",
     "url": "doOther(com.hypernite.mc.hnmc.core.builders.function.Calculation)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "enableWorld(String, CommandSender)",
+    "url": "enableWorld(java.lang.String,org.bukkit.command.CommandSender)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "AdvCommandNodeBuilder",
@@ -270,6 +295,26 @@ memberSearchIndex = [{
     "l": "fromBase64(String)",
     "url": "fromBase64(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "futureCreateWorld(String, World.Environment, ChunkGenerator, boolean, WorldType, long)",
+    "url": "futureCreateWorld(java.lang.String,org.bukkit.World.Environment,org.bukkit.generator.ChunkGenerator,boolean,org.bukkit.WorldType,long)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "futureCreateWorld(String, WorldType, World.Environment, boolean)",
+    "url": "futureCreateWorld(java.lang.String,org.bukkit.WorldType,org.bukkit.World.Environment,boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "futureCreateWorld(String, WorldType, World.Environment)",
+    "url": "futureCreateWorld(java.lang.String,org.bukkit.WorldType,org.bukkit.World.Environment)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "futureLoadWorld(String)",
+    "url": "futureLoadWorld(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "HttpRequest",
     "l": "get(String)",
@@ -311,6 +356,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.main",
     "c": "HyperNiteMC",
     "l": "getChatRunnerManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "getChunkGenerator(String, String)",
+    "url": "getChunkGenerator(java.lang.String,java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -526,6 +576,10 @@ memberSearchIndex = [{
     "l": "getSkull(UUID)",
     "url": "getSkull(java.util.UUID)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "getSpawn()"
+}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getSQLDataSource()"
@@ -562,6 +616,33 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "ReflectionUtil",
     "l": "getVersion()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldNonExistException",
+    "l": "getWorld()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "getWorldFile(String)",
+    "url": "getWorldFile(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getWorldManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getWorldManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "getWorldProperties(World)",
+    "url": "getWorldProperties(org.bukkit.World)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "getWorldSpawn(String)",
+    "url": "getWorldSpawn(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
@@ -622,10 +703,31 @@ memberSearchIndex = [{
     "l": "invokeTabCompletion(CommandSender, List<String>)",
     "url": "invokeTabCompletion(org.bukkit.command.CommandSender,java.util.List)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "isAutoLoad()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "Utils",
     "l": "isFullWalled(Block)",
     "url": "isFullWalled(org.bukkit.block.Block)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "isNotAutoLoad(String)",
+    "url": "isNotAutoLoad(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "isPve()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "isPvp()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "isVulnerable()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "Utils",
@@ -682,10 +784,33 @@ memberSearchIndex = [{
     "l": "itemStackToBase64(ItemStack)",
     "url": "itemStackToBase64(org.bukkit.inventory.ItemStack)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "listRealWorlds()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "listWorlds()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.config",
     "c": "ConfigSetter",
     "l": "loadConfig(Map<String, FileConfiguration>)",
     "url": "loadConfig(java.util.Map)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "loadWorld(String, CommandSender)",
+    "url": "loadWorld(java.lang.String,org.bukkit.command.CommandSender)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "LocationSerializer",
+    "l": "LocationSerializer()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "LocationSerializer",
+    "l": "locToConfigSection(Location)",
+    "url": "locToConfigSection(org.bukkit.Location)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
@@ -696,6 +821,11 @@ memberSearchIndex = [{
     "c": "ItemStackBuilder",
     "l": "lore(String)",
     "url": "lore(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "c": "LocationSerializer",
+    "l": "mapToLocation(ConfigurationSection)",
+    "url": "mapToLocation(org.bukkit.configuration.ConfigurationSection)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -769,6 +899,10 @@ memberSearchIndex = [{
     "c": "ItemStackBuilder",
     "l": "onInteract(ItemEventAction<PlayerInteractEvent>)",
     "url": "onInteract(com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.permission",
+    "c": "Perm",
+    "l": "OWNER"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
@@ -945,6 +1079,10 @@ memberSearchIndex = [{
     "url": "runTimeout(int,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "saveAll()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "BungeeManager",
     "l": "sendAllPlayers(String)",
     "url": "sendAllPlayers(java.lang.String)"
@@ -973,6 +1111,10 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "sendPlayer(Player)",
     "url": "sendPlayer(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "setAutoLoad(boolean)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "PlayerSkinManager",
@@ -1009,6 +1151,14 @@ memberSearchIndex = [{
     "l": "setMsgConfig(String)",
     "url": "setMsgConfig(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "setPve(boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "setPvp(boolean)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "PlayerSkinManager",
     "l": "setSkullMeta(String, ItemStack)",
@@ -1023,6 +1173,15 @@ memberSearchIndex = [{
     "c": "PlayerSkinManager",
     "l": "setSkullMeta(UUID, String, ItemStack)",
     "url": "setSkullMeta(java.util.UUID,java.lang.String,org.bukkit.inventory.ItemStack)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "setSpawn(Location)",
+    "url": "setSpawn(org.bukkit.Location)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "setVulnerable(boolean)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
@@ -1078,6 +1237,11 @@ memberSearchIndex = [{
     "url": "%3Cinit%3E()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "unloadWorld(String)",
+    "url": "unloadWorld(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "PlayerSkinManager",
     "l": "updateHeadBlock(String, Block)",
     "url": "updateHeadBlock(java.lang.String,org.bukkit.block.Block)"
@@ -1111,4 +1275,23 @@ memberSearchIndex = [{
     "c": "Utils",
     "l": "Utils()",
     "url": "%3Cinit%3E()"
-}, {"p": "com.hypernite.mc.hnmc.core.config", "c": "ConfigSetter", "l": "variablesMap()"}]
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "ConfigSetter",
+    "l": "variablesMap()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldNonExistException",
+    "l": "WorldNonExistException(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "WorldProperties(boolean, boolean, Location, boolean, boolean)",
+    "url": "%3Cinit%3E(boolean,boolean,org.bukkit.Location,boolean,boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "c": "WorldProperties",
+    "l": "WorldProperties(Location)",
+    "url": "%3Cinit%3E(org.bukkit.Location)"
+}]

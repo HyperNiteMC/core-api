@@ -36,6 +36,14 @@ public class AdvMessageBuilder {
         return this;
     }
 
+    public AdvMessageBuilder add(MessageBuilder... builder) {
+        for (MessageBuilder messageBuilder : builder) {
+            this.add(messageBuilder);
+            this.nextLine();
+        }
+        return this;
+    }
+
     public AdvMessageBuilder nextLine() {
         textComponent.addExtra("\n");
         return this;

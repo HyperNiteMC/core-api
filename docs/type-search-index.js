@@ -64,10 +64,16 @@ typeSearchIndex = [{
 }, {"p": "com.hypernite.mc.hnmc.core.listener", "l": "ItemEventAction"}, {
     "p": "com.hypernite.mc.hnmc.core.listener",
     "l": "ItemEventManager"
-}, {"p": "com.hypernite.mc.hnmc.core.builders", "l": "ItemStackBuilder"}, {
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
-    "l": "MessageBuilder"
-}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "NameTagManager"}, {
+    "l": "ItemStackBuilder"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "l": "LocationSerializer"
+}, {"p": "com.hypernite.mc.hnmc.core.builders", "l": "MessageBuilder"}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "l": "NameTagManager"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "l": "NMSUtils"
 }, {
@@ -85,4 +91,7 @@ typeSearchIndex = [{
 }, {"p": "com.hypernite.mc.hnmc.core.utils", "l": "Utils"}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "l": "VaultAPI"
-}]
+}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "WorldManager"}, {
+    "p": "com.hypernite.mc.hnmc.core.misc.world",
+    "l": "WorldNonExistException"
+}, {"p": "com.hypernite.mc.hnmc.core.misc.world", "l": "WorldProperties"}]

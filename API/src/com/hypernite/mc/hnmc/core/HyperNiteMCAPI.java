@@ -36,4 +36,6 @@ public interface HyperNiteMCAPI {
 
     VaultAPI getVaultAPI();
 
+    WorldManager getWorldManager();
+
 }

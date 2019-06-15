@@ -79,4 +79,9 @@ public class HyperNiteMC implements HyperNiteMCAPI {
     public VaultAPI getVaultAPI() {
         throw new RuntimeException("RUNTIME ERROR");
     }
+
+    @Override
+    public WorldManager getWorldManager() {
+        throw new RuntimeException("RUNTIME ERROR");
+    }
 }
