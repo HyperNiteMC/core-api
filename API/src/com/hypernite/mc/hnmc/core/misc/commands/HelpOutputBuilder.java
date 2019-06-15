@@ -24,7 +24,7 @@ class HelpOutputBuilder {
         }
         mainCommand = mainCommandBuilder.toString();
         layout = new ComponentBuilder("");
-        layout.append("============ ").color(ChatColor.GRAY).append("/" + mainCommand + " 指令幫助").color(ChatColor.AQUA).append(" ============").color(ChatColor.GRAY).append("\n").color(ChatColor.RESET);
+        layout.append("============[ ").color(ChatColor.GRAY).append("/" + mainCommand + " 指令幫助").color(ChatColor.AQUA).append(" ]============").color(ChatColor.GRAY).append("\n").color(ChatColor.RESET);
     }
 
     HelpOutputBuilder append(@Nonnull CommandNode res) {
@@ -49,7 +49,7 @@ class HelpOutputBuilder {
             hover = new HoverEvent(HoverEvent.Action.SHOW_TEXT, TextComponent.fromLegacyText("§a點擊以執行"));
         }
 
-        layout.append(new ComponentBuilder(cmd).event(event).event(hover).create()).append(" - ").color(ChatColor.GRAY).append(res.getDescription()).color(ChatColor.YELLOW).append("\n").reset();
+        layout.append(new ComponentBuilder(cmd).color(ChatColor.WHITE).event(event).event(hover).create()).append(" - ").color(ChatColor.GRAY).append(res.getDescription()).color(ChatColor.YELLOW).append("\n").reset();
         return this;
     }
 
