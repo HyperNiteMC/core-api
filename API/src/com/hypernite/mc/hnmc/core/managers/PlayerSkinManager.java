@@ -4,8 +4,8 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.inventory.ItemStack;
 
-import java.io.IOException;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
 
 public interface PlayerSkinManager {
 
@@ -87,9 +87,8 @@ public interface PlayerSkinManager {
 
     /**
      * @param uuid 玩家UUID
-     * @return Base64 Texture Value
-     * @throws IOException IO Error
+     * @return Base64 Texture Value or IOException
      */
-    String getTextureValue(UUID uuid) throws IOException;
+    CompletableFuture<String> getTextureValue(UUID uuid);
 
 }

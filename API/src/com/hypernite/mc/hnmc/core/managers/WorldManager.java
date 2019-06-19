@@ -97,7 +97,7 @@ public interface WorldManager {
      * @param world 世界名稱
      * @return 出生點
      */
-    Location getWorldSpawn(String world);
+    Optional<Location> getWorldSpawn(String world);
 
     /**
      * @param world 世界名稱
