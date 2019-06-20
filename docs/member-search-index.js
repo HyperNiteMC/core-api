@@ -1,4 +1,12 @@
 memberSearchIndex = [{
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "A()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "ABOVE"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
     "l": "add(BaseComponent)",
@@ -43,6 +51,15 @@ memberSearchIndex = [{
     "l": "addAllAliases(List<String>)",
     "url": "addAllAliases(java.util.List)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Algorithm",
+    "l": "ADDITION"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "addition(String, Integer)",
+    "url": "addition(java.lang.String,java.lang.Integer)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "NameTagManager",
     "l": "addPlayer(Player)",
@@ -82,10 +99,135 @@ memberSearchIndex = [{
     "l": "alias(String...)",
     "url": "alias(java.lang.String...)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "amount()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Mutual",
+    "l": "AND"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "and(Brackets)",
+    "url": "and(com.hypernite.mc.hnmc.core.builders.sql.builder.Brackets)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "and(Brackets)",
+    "url": "and(com.hypernite.mc.hnmc.core.builders.sql.builder.Brackets)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "and(String, Judge, Boolean)",
+    "url": "and(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "and(String, Judge, Boolean)",
+    "url": "and(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "and(String, Judge, Integer)",
+    "url": "and(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "and(String, Judge, Integer)",
+    "url": "and(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "and(String, Judge, String)",
+    "url": "and(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "and(String, Judge, String)",
+    "url": "and(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "and(String, Judge)",
+    "url": "and(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "and(String, Judge)",
+    "url": "and(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "and(Where)",
+    "url": "and(com.hypernite.mc.hnmc.core.builders.sql.builder.Where)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "and(Where)",
+    "url": "and(com.hypernite.mc.hnmc.core.builders.sql.builder.Where)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
     "l": "applyGameRules(Map<GameRule<T>, T>, World)",
     "url": "applyGameRules(java.util.Map,org.bukkit.World)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "AVG"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "B()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "before()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "brackets(Brackets)",
+    "url": "brackets(com.hypernite.mc.hnmc.core.builders.sql.builder.Brackets)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "brackets(Brackets)",
+    "url": "brackets(com.hypernite.mc.hnmc.core.builders.sql.builder.Brackets)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "brackets(Brackets)",
+    "url": "brackets(com.hypernite.mc.hnmc.core.builders.sql.builder.Brackets)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "Brackets(String, Judge, Boolean)",
+    "url": "%3Cinit%3E(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "Brackets(String, Judge, Integer)",
+    "url": "%3Cinit%3E(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "Brackets(String, Judge, String)",
+    "url": "%3Cinit%3E(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "Brackets(String, Judge)",
+    "url": "%3Cinit%3E(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLConversion",
+    "l": "brackets(String)",
+    "url": "brackets(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "Brackets(Where)",
+    "url": "%3Cinit%3E(com.hypernite.mc.hnmc.core.builders.sql.builder.Where)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
@@ -119,6 +261,10 @@ memberSearchIndex = [{
     "c": "Perm",
     "l": "BUILDER"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "C()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders.function",
     "c": "Calculation",
     "l": "cal(double)"
@@ -127,6 +273,10 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "CalculationBuilder(double)",
     "url": "%3Cinit%3E(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "CANNOT"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "InventoryBuilder",
@@ -146,6 +296,10 @@ memberSearchIndex = [{
     "c": "Utils",
     "l": "circle(Location, int, int, boolean, boolean, int)",
     "url": "circle(org.bukkit.Location,int,int,boolean,boolean,int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "close()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
@@ -187,6 +341,15 @@ memberSearchIndex = [{
     "l": "convertItemStackToJson(ItemStack)",
     "url": "convertItemStackToJson(org.bukkit.inventory.ItemStack)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "COUNT"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Order",
+    "l": "decrement(String)",
+    "url": "decrement(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "DefaultCommand",
     "l": "DefaultCommand(CommandNode, String, String, String, String...)",
@@ -196,6 +359,15 @@ memberSearchIndex = [{
     "c": "DefaultCommandBuilder",
     "l": "DefaultCommandBuilder(String)",
     "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLB",
+    "l": "delete()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "Delete()",
+    "url": "%3Cinit%3E()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
@@ -240,10 +412,47 @@ memberSearchIndex = [{
     "l": "doOther(Calculation)",
     "url": "doOther(com.hypernite.mc.hnmc.core.builders.function.Calculation)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "duplicateAddition(String, Integer)",
+    "url": "duplicateAddition(java.lang.String,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "duplicateSubtraction(String, Integer)",
+    "url": "duplicateSubtraction(java.lang.String,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "duplicateUpdate(String, Boolean)",
+    "url": "duplicateUpdate(java.lang.String,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "duplicateUpdate(String, Insert)",
+    "url": "duplicateUpdate(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Insert)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "duplicateUpdate(String, String)",
+    "url": "duplicateUpdate(java.lang.String,java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
     "l": "enableWorld(String, CommandSender)",
     "url": "enableWorld(java.lang.String,org.bukkit.command.CommandSender)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Algorithm",
+    "l": "EQUAL"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "EQUAL"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "EXCEED"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "AdvCommandNodeBuilder",
@@ -290,6 +499,26 @@ memberSearchIndex = [{
     "l": "fillRow(int, ItemStack)",
     "url": "fillRow(int,org.bukkit.inventory.ItemStack)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "from(String)",
+    "url": "from(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "from(String)",
+    "url": "from(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "from(String)",
+    "url": "from(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "from(String)",
+    "url": "from(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils.converters",
     "c": "InvConvert",
     "l": "fromBase64(String)",
@@ -323,7 +552,21 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
     "l": "getAlias()"
-}, {"p": "com.hypernite.mc.hnmc.core.main", "c": "HyperNiteMC", "l": "getAPI()"}, {
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getAPI()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getBoolean(String)",
+    "url": "getBoolean(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getBooleanByInt(String)",
+    "url": "getBooleanByInt(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getBungeeManager()"
@@ -331,6 +574,16 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.main",
     "c": "HyperNiteMC",
     "l": "getBungeeManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getByte(String)",
+    "url": "getByte(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getBytes(String)",
+    "url": "getBytes(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "VaultAPI",
@@ -453,6 +706,11 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "getDescription()"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getDouble(String)",
+    "url": "getDouble(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "VaultAPI",
     "l": "getEconomy()"
@@ -462,10 +720,20 @@ memberSearchIndex = [{
     "l": "getField(Class<?>, String)",
     "url": "getField(java.lang.Class,java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getFloat(String)",
+    "url": "getFloat(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ChatFormatManager",
     "l": "getFormat(Player)",
     "url": "getFormat(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getInt(String)",
+    "url": "getInt(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
@@ -474,6 +742,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.main",
     "c": "HyperNiteMC",
     "l": "getItemEventManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getLong(String)",
+    "url": "getLong(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ConfigManager",
@@ -519,6 +792,11 @@ memberSearchIndex = [{
     "c": "ReflectionUtil",
     "l": "getOBCClass(String)",
     "url": "getOBCClass(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getObject(String)",
+    "url": "getObject(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -579,7 +857,7 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "c": "WorldProperties",
     "l": "getSpawn()"
-}, {
+}, {"p": "com.hypernite.mc.hnmc.core.builders.sql", "c": "SQL", "l": "getSQL()"}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getSQLDataSource()"
@@ -587,6 +865,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.main",
     "c": "HyperNiteMC",
     "l": "getSQLDataSource()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getString(String)",
+    "url": "getString(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -604,6 +887,32 @@ memberSearchIndex = [{
     "c": "PlayerSkinManager",
     "l": "getTextureValue(UUID)",
     "url": "getTextureValue(java.util.UUID)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getTime(String)",
+    "url": "getTime(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "getTimestamp(String)",
+    "url": "getTimestamp(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Algorithm",
+    "l": "getValue()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "getValue()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Mutual",
+    "l": "getValue()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "getValue()"
 }, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
@@ -678,6 +987,54 @@ memberSearchIndex = [{
     "l": "HyperNiteMC()",
     "url": "%3Cinit%3E()"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "IN"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Order",
+    "l": "increment(String)",
+    "url": "increment(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLB",
+    "l": "insert()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "Insert()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "insert(String, Boolean, Boolean)",
+    "url": "insert(java.lang.String,java.lang.Boolean,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "insert(String, Boolean)",
+    "url": "insert(java.lang.String,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "insert(String, Integer, Integer, Algorithm)",
+    "url": "insert(java.lang.String,java.lang.Integer,java.lang.Integer,com.hypernite.mc.hnmc.core.builders.sql.builder.Algorithm)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "insert(String, Integer)",
+    "url": "insert(java.lang.String,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "insert(String, String, String)",
+    "url": "insert(java.lang.String,java.lang.String,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "insert(String, String)",
+    "url": "insert(java.lang.String,java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
     "l": "insertWhenShiftClick(String)",
@@ -702,6 +1059,14 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "invokeTabCompletion(CommandSender, List<String>)",
     "url": "invokeTabCompletion(org.bukkit.command.CommandSender,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "IS_NOT_NULL"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "IS_NULL"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "c": "WorldProperties",
@@ -784,6 +1149,26 @@ memberSearchIndex = [{
     "l": "itemStackToBase64(ItemStack)",
     "url": "itemStackToBase64(org.bukkit.inventory.ItemStack)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "LESS"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "LIKE"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "limit(int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "limit(int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "limit(int)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
     "l": "listRealWorlds()"
@@ -837,6 +1222,10 @@ memberSearchIndex = [{
     "l": "material(Material)",
     "url": "material(org.bukkit.Material)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "MAX"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
     "l": "MessageBuilder()",
@@ -852,6 +1241,10 @@ memberSearchIndex = [{
     "l": "MessageBuilder(String)",
     "url": "%3Cinit%3E(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "MIN"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
     "l": "minus(double)"
@@ -863,6 +1256,14 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
     "l": "multiply(double)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "N()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "next()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
@@ -877,10 +1278,38 @@ memberSearchIndex = [{
     "l": "NMSUtils()",
     "url": "%3Cinit%3E()"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "NOT"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "NOT_IN"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "NOT_LIKE"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "NOT_REGEXP"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands.exception",
     "c": "NotExecutableException",
     "l": "NotExecutableException(String)",
     "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "offset(int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "offset(int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "offset(int)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
@@ -899,6 +1328,90 @@ memberSearchIndex = [{
     "c": "ItemStackBuilder",
     "l": "onInteract(ItemEventAction<PlayerInteractEvent>)",
     "url": "onInteract(com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Mutual",
+    "l": "OR"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "or(Brackets)",
+    "url": "or(com.hypernite.mc.hnmc.core.builders.sql.builder.Brackets)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "or(Brackets)",
+    "url": "or(com.hypernite.mc.hnmc.core.builders.sql.builder.Brackets)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "or(String, Judge, Boolean)",
+    "url": "or(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "or(String, Judge, Boolean)",
+    "url": "or(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "or(String, Judge, Integer)",
+    "url": "or(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "or(String, Judge, Integer)",
+    "url": "or(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "or(String, Judge, String)",
+    "url": "or(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "or(String, Judge, String)",
+    "url": "or(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "or(String, Judge)",
+    "url": "or(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "or(String, Judge)",
+    "url": "or(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "or(Where)",
+    "url": "or(com.hypernite.mc.hnmc.core.builders.sql.builder.Where)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "or(Where)",
+    "url": "or(com.hypernite.mc.hnmc.core.builders.sql.builder.Where)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Order",
+    "l": "Order()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "order(Order)",
+    "url": "order(com.hypernite.mc.hnmc.core.builders.sql.builder.Order)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "order(Order)",
+    "url": "order(com.hypernite.mc.hnmc.core.builders.sql.builder.Order)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "order(Order)",
+    "url": "order(com.hypernite.mc.hnmc.core.builders.sql.builder.Order)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
@@ -923,6 +1436,18 @@ memberSearchIndex = [{
     "c": "DefaultCommandBuilder",
     "l": "parent(CommandNode)",
     "url": "parent(com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Brackets",
+    "l": "part()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Order",
+    "l": "part()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "part()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
@@ -967,6 +1492,34 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "pow(double)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "Q()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "Q(Select)",
+    "url": "Q(com.hypernite.mc.hnmc.core.builders.sql.builder.Select)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "Q(String)",
+    "url": "Q(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "question()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "question(Select)",
+    "url": "question(com.hypernite.mc.hnmc.core.builders.sql.builder.Select)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "question(String)",
+    "url": "question(java.lang.String)"
+}, {"p": "com.hypernite.mc.hnmc.core.builders.sql", "c": "SQL", "l": "R()"}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "Tools",
     "l": "randomWithRange(int, int)",
@@ -976,6 +1529,10 @@ memberSearchIndex = [{
     "c": "ReflectionUtil",
     "l": "ReflectionUtil()",
     "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "REGEXP"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders.function",
     "c": "ChatRunnerManager",
@@ -1020,6 +1577,10 @@ memberSearchIndex = [{
     "c": "ItemEventManager",
     "l": "removeItem(String)",
     "url": "removeItem(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "result()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "InventoryBuilder",
@@ -1078,9 +1639,48 @@ memberSearchIndex = [{
     "l": "runTimeout(int, ChatRunner)",
     "url": "runTimeout(int,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLConversion",
+    "l": "safety(String)",
+    "url": "safety(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
     "l": "saveAll()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLB",
+    "l": "select()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "Select()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "select(Return, String)",
+    "url": "select(com.hypernite.mc.hnmc.core.builders.sql.builder.Return,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLB",
+    "l": "select(String...)",
+    "url": "select(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "select(String...)",
+    "url": "select(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "Select(String...)",
+    "url": "%3Cinit%3E(java.lang.String...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "select(String)",
+    "url": "select(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "BungeeManager",
@@ -1179,6 +1779,11 @@ memberSearchIndex = [{
     "l": "setSpawn(Location)",
     "url": "setSpawn(org.bukkit.Location)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "setSQL(String)",
+    "url": "setSQL(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "c": "WorldProperties",
     "l": "setVulnerable(boolean)"
@@ -1198,6 +1803,58 @@ memberSearchIndex = [{
     "l": "showItem(ItemStack)",
     "url": "showItem(org.bukkit.inventory.ItemStack)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "sql()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "sql()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "sql()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "sql()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "SQL()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "SQL(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLB",
+    "l": "SQLB()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLConversion",
+    "l": "SQLConversion()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "sqlQuestion()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "sqlUpdate()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Insert",
+    "l": "sqlUpdate()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "sqlUpdate()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
     "l": "sqrt()"
@@ -1206,10 +1863,27 @@ memberSearchIndex = [{
     "c": "ItemStackBuilder",
     "l": "stack(int)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "STDEV"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Algorithm",
+    "l": "SUBTRACTION"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "subtraction(String, Integer)",
+    "url": "subtraction(java.lang.String,java.lang.Integer)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
     "l": "suggest(String)",
     "url": "suggest(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "SUM"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "AdvCommandNodeBuilder",
@@ -1236,10 +1910,91 @@ memberSearchIndex = [{
     "l": "Tools()",
     "url": "%3Cinit%3E()"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "U()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "U(Delete)",
+    "url": "U(com.hypernite.mc.hnmc.core.builders.sql.builder.Delete)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "U(Insert)",
+    "url": "U(com.hypernite.mc.hnmc.core.builders.sql.builder.Insert)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "U(String)",
+    "url": "U(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "U(Update)",
+    "url": "U(com.hypernite.mc.hnmc.core.builders.sql.builder.Update)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "UNDER"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
     "l": "unloadWorld(String)",
     "url": "unloadWorld(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "update()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQLB",
+    "l": "update()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "Update()",
+    "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "update(Delete)",
+    "url": "update(com.hypernite.mc.hnmc.core.builders.sql.builder.Delete)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "update(Insert)",
+    "url": "update(com.hypernite.mc.hnmc.core.builders.sql.builder.Insert)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "update(String, Boolean)",
+    "url": "update(java.lang.String,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "update(String, Integer, Algorithm)",
+    "url": "update(java.lang.String,java.lang.Integer,com.hypernite.mc.hnmc.core.builders.sql.builder.Algorithm)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "update(String, Integer)",
+    "url": "update(java.lang.String,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "update(String, String)",
+    "url": "update(java.lang.String,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "update(String)",
+    "url": "update(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql",
+    "c": "SQL",
+    "l": "update(Update)",
+    "url": "update(com.hypernite.mc.hnmc.core.builders.sql.builder.Update)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "PlayerSkinManager",
@@ -1276,9 +2031,84 @@ memberSearchIndex = [{
     "l": "Utils()",
     "url": "%3Cinit%3E()"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Algorithm",
+    "l": "valueOf(String)",
+    "url": "valueOf(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "valueOf(String)",
+    "url": "valueOf(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Mutual",
+    "l": "valueOf(String)",
+    "url": "valueOf(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "valueOf(String)",
+    "url": "valueOf(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Algorithm",
+    "l": "values()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Judge",
+    "l": "values()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Mutual",
+    "l": "values()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "values()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Return",
+    "l": "VAR"
+}, {
     "p": "com.hypernite.mc.hnmc.core.config",
     "c": "ConfigSetter",
     "l": "variablesMap()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "Where(String, Judge, Boolean)",
+    "url": "%3Cinit%3E(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "Where(String, Judge, Integer)",
+    "url": "%3Cinit%3E(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.Integer)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "Where(String, Judge, String)",
+    "url": "%3Cinit%3E(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Where",
+    "l": "Where(String, Judge)",
+    "url": "%3Cinit%3E(java.lang.String,com.hypernite.mc.hnmc.core.builders.sql.builder.Judge)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Delete",
+    "l": "where(Where)",
+    "url": "where(com.hypernite.mc.hnmc.core.builders.sql.builder.Where)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Select",
+    "l": "where(Where)",
+    "url": "where(com.hypernite.mc.hnmc.core.builders.sql.builder.Where)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders.sql.builder",
+    "c": "Update",
+    "l": "where(Where)",
+    "url": "where(com.hypernite.mc.hnmc.core.builders.sql.builder.Where)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "c": "WorldNonExistException",
