@@ -864,6 +864,10 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "multiply(double)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "Extract",
+    "l": "name()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
     "l": "nextLine()"

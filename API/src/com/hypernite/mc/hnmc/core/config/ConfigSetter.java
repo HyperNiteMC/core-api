@@ -28,11 +28,13 @@ public abstract class ConfigSetter {
     /**
      * 方便獲取用
      *
+     * <p>
+     *
+     * 現已可 透過 @Extract 取代 此 方法。
+     *
+     * @see Extract
+     *
      * @return 變數列表
-     * @see com.hypernite.mc.hnmc.core.managers.ConfigManager#getData(String)
-     * @see com.hypernite.mc.hnmc.core.managers.ConfigManager#getData(String, Class)
-     * @see com.hypernite.mc.hnmc.core.managers.ConfigManager#getDataList(String, Class)
-     * @see com.hypernite.mc.hnmc.core.managers.ConfigManager#getDataMap(String, Class, Class)
      */
     public Map<String, Object> variablesMap() {
         return Map.of();
