@@ -25,21 +25,6 @@ public abstract class ConfigSetter {
      */
     public abstract void loadConfig(Map<String, FileConfiguration> ymls);
 
-    /**
-     * 方便獲取用
-     *
-     * <p>
-     *
-     * 現已可 透過 @Extract 取代 此 方法。
-     *
-     * @see Extract
-     *
-     * @return 變數列表
-     */
-    public Map<String, Object> variablesMap() {
-        return Map.of();
-    }
-
     public Plugin getPlugin() {
         return plugin;
     }

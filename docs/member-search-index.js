@@ -1280,10 +1280,6 @@ memberSearchIndex = [{
     "l": "Utils()",
     "url": "%3Cinit%3E()"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "ConfigSetter",
-    "l": "variablesMap()"
-}, {
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "c": "WorldNonExistException",
     "l": "WorldNonExistException(String)",

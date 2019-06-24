@@ -7,13 +7,13 @@ public interface ChatFormatManager {
     /**
      * @param player  玩家
      * @param message 訊息
-     * @return 帶有訊息的聊天格式
+     * @return 帶有訊息的聊天格式, 沒有時返回空白
      */
     String getChatFormat(Player player, String message);
 
     /**
      * @param player 玩家
-     * @return 不帶有訊息的聊天格式
+     * @return 不帶有訊息的聊天格式, 沒有時返回空白
      */
     String getFormat(Player player);
 
