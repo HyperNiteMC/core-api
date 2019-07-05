@@ -12,7 +12,7 @@ public class Tools {
 
     public static String toLongString(String[] args, int startFrom) {
         StringBuilder arg = new StringBuilder(startFrom);
-        for (int i = startFrom - 1; i < args.length; i++) {
+        for (int i = startFrom; i < args.length; i++) {
             String str = args[i];
             arg.append(' ').append(str);
         }
