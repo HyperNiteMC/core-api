@@ -116,6 +116,12 @@ public abstract class CommandNode {
     public boolean invokeCommand(@Nonnull CommandSender sender, @Nonnull List<String> args) throws CommandPermissionException, CommandArgumentException {
         if (args.size() == 0) {
             if (permission == null || Perm.hasPermission(sender, permission)) {
+                if (this.getPlaceholder() != null) {
+                    String[] placeholders = Arrays.stream(this.getPlaceholder().split(" ")).filter(holder -> holder.startsWith("<") && holder.endsWith(">")).toArray(String[]::new);
+                    if (placeholders.length > 0) {
+                        throw new CommandArgumentException(String.join(" ", placeholders));
+                    }
+                }
                 return executeCommand(sender, args);
             } else {
                 throw new CommandPermissionException(permission);
@@ -132,11 +138,18 @@ public abstract class CommandNode {
                         throw new CommandArgumentException(String.join(" ", placeholders));
                     }
                 }
+
                 return subCommand.invokeCommand(sender, passArg);
             }
         }
 
         if (permission == null || Perm.hasPermission(sender, permission)) {
+            if (this.getPlaceholder() != null) {
+                String[] placeholders = Arrays.stream(this.getPlaceholder().split(" ")).filter(holder -> holder.startsWith("<") && holder.endsWith(">")).toArray(String[]::new);
+                if (args.size() < placeholders.length) {
+                    throw new CommandArgumentException(String.join(" ", placeholders));
+                }
+            }
             return executeCommand(sender, args);
         } else {
             throw new CommandPermissionException(permission);
