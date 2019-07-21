@@ -2,6 +2,7 @@ package com.hypernite.mc.hnmc.core;
 
 import com.hypernite.mc.hnmc.core.builders.function.ChatRunnerManager;
 import com.hypernite.mc.hnmc.core.config.ConfigSetter;
+import com.hypernite.mc.hnmc.core.factory.CoreFactory;
 import com.hypernite.mc.hnmc.core.listener.ItemEventManager;
 import com.hypernite.mc.hnmc.core.managers.*;
 
@@ -15,6 +16,8 @@ public interface HyperNiteMCAPI {
     ChatFormatManager getChatFormatManager();
 
     ChatRunnerManager getChatRunnerManager();
+
+    CoreFactory getFactory();
 
     ConfigManager registerConfig(ConfigSetter setter);
 

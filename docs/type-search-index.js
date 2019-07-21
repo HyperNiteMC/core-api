@@ -43,7 +43,10 @@ typeSearchIndex = [{
 }, {"p": "com.hypernite.mc.hnmc.core.config", "l": "ConfigSetter"}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "l": "CoreConfig"
-}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "CoreScheduler"}, {
+}, {"p": "com.hypernite.mc.hnmc.core.factory", "l": "CoreFactory"}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "l": "CoreScheduler"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "l": "DefaultCommand"
 }, {
@@ -74,9 +77,9 @@ typeSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.utils.converters",
     "l": "LocationSerializer"
 }, {"p": "com.hypernite.mc.hnmc.core.builders", "l": "MessageBuilder"}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "l": "NameTagManager"
-}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "l": "MethodWrapper"
+}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "NameTagManager"}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "l": "NMSUtils"
 }, {
@@ -85,16 +88,19 @@ typeSearchIndex = [{
 }, {"p": "com.hypernite.mc.hnmc.core.misc.permission", "l": "Perm"}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "l": "PlayerSkinManager"
-}, {"p": "com.hypernite.mc.hnmc.core.utils", "l": "ReflectionUtil"}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "l": "SQLDataSource"
-}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "TabListManager"}, {
+}, {"p": "com.hypernite.mc.hnmc.core.factory", "l": "ReflectionFactory"}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
-    "l": "Tools"
-}, {"p": "com.hypernite.mc.hnmc.core.utils", "l": "Utils"}, {
+    "l": "ReflectionUtil"
+}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "SQLDataSource"}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
-    "l": "VaultAPI"
-}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "WorldManager"}, {
+    "l": "TabListManager"
+}, {"p": "com.hypernite.mc.hnmc.core.utils", "l": "Tools"}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "l": "Utils"
+}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "VaultAPI"}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "l": "WorldManager"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "l": "WorldNonExistException"
 }, {"p": "com.hypernite.mc.hnmc.core.misc.world", "l": "WorldProperties"}]

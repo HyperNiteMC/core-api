@@ -3,6 +3,7 @@ package com.hypernite.mc.hnmc.core.main;
 import com.hypernite.mc.hnmc.core.HyperNiteMCAPI;
 import com.hypernite.mc.hnmc.core.builders.function.ChatRunnerManager;
 import com.hypernite.mc.hnmc.core.config.ConfigSetter;
+import com.hypernite.mc.hnmc.core.factory.CoreFactory;
 import com.hypernite.mc.hnmc.core.listener.ItemEventManager;
 import com.hypernite.mc.hnmc.core.managers.*;
 
@@ -29,6 +30,12 @@ public class HyperNiteMC implements HyperNiteMCAPI {
     public ChatRunnerManager getChatRunnerManager() {
         throw new RuntimeException("RUNTIME ERROR");
     }
+
+    @Override
+    public CoreFactory getFactory() {
+        throw new RuntimeException("RUNTIME ERROR");
+    }
+
 
     @Override
     public ConfigManager registerConfig(ConfigSetter setter) {

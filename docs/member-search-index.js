@@ -43,10 +43,20 @@ memberSearchIndex = [{
     "l": "addAllAliases(List<String>)",
     "url": "addAllAliases(java.util.List)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "ReflectionFactory",
+    "l": "addMethod(String, Object...)",
+    "url": "addMethod(java.lang.String,java.lang.Object...)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "NameTagManager",
     "l": "addPlayer(Player)",
     "url": "addPlayer(org.bukkit.entity.Player)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "ReflectionFactory",
+    "l": "addStaticMethod(String, Object...)",
+    "url": "addStaticMethod(java.lang.String,java.lang.Object...)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -233,13 +243,13 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "HNFileUtils",
-    "l": "doFileNameUtilsMethod(String, Class<T>, Object...)",
-    "url": "doFileNameUtilsMethod(java.lang.String,java.lang.Class,java.lang.Object...)"
+    "l": "doFileNameUtilsMethod(String, Class<T>, Class<E>[], Object...)",
+    "url": "doFileNameUtilsMethod(java.lang.String,java.lang.Class,java.lang.Class[],java.lang.Object...)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "HNFileUtils",
-    "l": "doFileUtilsMethod(String, Class<T>, Object...)",
-    "url": "doFileUtilsMethod(java.lang.String,java.lang.Class,java.lang.Object...)"
+    "l": "doFileUtilsMethod(String, Class<T>, Class<E>[], Object...)",
+    "url": "doFileUtilsMethod(java.lang.String,java.lang.Class,java.lang.Class[],java.lang.Object...)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
@@ -274,6 +284,16 @@ memberSearchIndex = [{
     "c": "AdvCmdExecution",
     "l": "execute(D, List<String>)",
     "url": "execute(D,java.util.List)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "MethodWrapper",
+    "l": "execute(String, Class<T>, Class<? extends E>...)",
+    "url": "execute(java.lang.String,java.lang.Class,java.lang.Class...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "MethodWrapper",
+    "l": "executeCatch(String, Class<T>, Consumer<Exception>)",
+    "url": "executeCatch(java.lang.String,java.lang.Class,java.util.function.Consumer)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -491,6 +511,14 @@ memberSearchIndex = [{
     "l": "getExtension(String)",
     "url": "getExtension(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getFactory()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getFactory()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "ReflectionUtil",
     "l": "getField(Class<?>, String)",
@@ -524,6 +552,15 @@ memberSearchIndex = [{
     "l": "getMethod(Class<?>, String, Class<?>...)",
     "url": "getMethod(java.lang.Class,java.lang.String,java.lang.Class...)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "ReflectionFactory",
+    "l": "getMethods()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "ReflectionFactory",
+    "l": "getMethodsWithException(Class<E>)",
+    "url": "getMethodsWithException(java.lang.Class)"
+}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getNameTagManager()"
@@ -553,6 +590,11 @@ memberSearchIndex = [{
     "c": "ReflectionUtil",
     "l": "getOBCClass(String)",
     "url": "getOBCClass(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "MethodWrapper",
+    "l": "getParametersType(Object...)",
+    "url": "getParametersType(java.lang.Object...)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -596,6 +638,11 @@ memberSearchIndex = [{
     "l": "getPureMessage(String)",
     "url": "getPureMessage(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "CoreFactory",
+    "l": "getReflectionFactory(String)",
+    "url": "getReflectionFactory(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
     "l": "getResult()"
@@ -621,6 +668,14 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.main",
     "c": "HyperNiteMC",
     "l": "getSQLDataSource()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "ReflectionFactory",
+    "l": "getStaticMethods()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "ReflectionFactory",
+    "l": "getStaticMethodsWithException()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -1010,6 +1065,11 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "pow(double)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "MethodWrapper",
+    "l": "putMethod(String, Object...)",
+    "url": "putMethod(java.lang.String,java.lang.Object...)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "Tools",
     "l": "randomWithRange(int, int)",
@@ -1158,6 +1218,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "c": "WorldProperties",
     "l": "setAutoLoad(boolean)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "ReflectionFactory",
+    "l": "setConstructor(Object...)",
+    "url": "setConstructor(java.lang.Object...)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "PlayerSkinManager",
