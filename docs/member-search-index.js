@@ -231,6 +231,16 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "divide(double)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HNFileUtils",
+    "l": "doFileNameUtilsMethod(String, Class<T>, Object...)",
+    "url": "doFileNameUtilsMethod(java.lang.String,java.lang.Class,java.lang.Object...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HNFileUtils",
+    "l": "doFileUtilsMethod(String, Class<T>, Object...)",
+    "url": "doFileUtilsMethod(java.lang.String,java.lang.Class,java.lang.Object...)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
     "l": "DONOR"
@@ -290,6 +300,16 @@ memberSearchIndex = [{
     "l": "fillRow(int, ItemStack)",
     "url": "fillRow(int,org.bukkit.inventory.ItemStack)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HNFileUtils",
+    "l": "forceDelete(File)",
+    "url": "forceDelete(java.io.File)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HNFileUtils",
+    "l": "forceDeleteOnExit(File)",
+    "url": "forceDeleteOnExit(java.io.File)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils.converters",
     "c": "InvConvert",
     "l": "fromBase64(String)",
@@ -323,7 +343,16 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
     "l": "getAlias()"
-}, {"p": "com.hypernite.mc.hnmc.core.main", "c": "HyperNiteMC", "l": "getAPI()"}, {
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getAPI()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HNFileUtils",
+    "l": "getBaseName(String)",
+    "url": "getBaseName(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getBungeeManager()"
@@ -338,8 +367,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ChatFormatManager",
-    "l": "getChatFormat(Player, String)",
-    "url": "getChatFormat(org.bukkit.entity.Player,java.lang.String)"
+    "l": "getChatFormat(Player)",
+    "url": "getChatFormat(org.bukkit.entity.Player)"
 }, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
@@ -456,6 +485,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "VaultAPI",
     "l": "getEconomy()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HNFileUtils",
+    "l": "getExtension(String)",
+    "url": "getExtension(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "ReflectionUtil",
@@ -662,6 +696,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
     "l": "HELPER"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "HNFileUtils",
+    "l": "HNFileUtils()",
+    "url": "%3Cinit%3E()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",

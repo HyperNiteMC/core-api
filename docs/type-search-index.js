@@ -51,11 +51,14 @@ typeSearchIndex = [{
     "l": "DefaultCommandBuilder"
 }, {"p": "com.hypernite.mc.hnmc.core.config", "l": "Extract"}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
-    "l": "HttpRequest"
-}, {"p": "com.hypernite.mc.hnmc.core.main", "l": "HyperNiteMC"}, {
-    "p": "com.hypernite.mc.hnmc.core",
-    "l": "HyperNiteMCAPI"
-}, {"p": "com.hypernite.mc.hnmc.core.utils.converters", "l": "InvConvert"}, {
+    "l": "HNFileUtils"
+}, {"p": "com.hypernite.mc.hnmc.core.utils", "l": "HttpRequest"}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "l": "HyperNiteMC"
+}, {"p": "com.hypernite.mc.hnmc.core", "l": "HyperNiteMCAPI"}, {
+    "p": "com.hypernite.mc.hnmc.core.utils.converters",
+    "l": "InvConvert"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "l": "InventoryBuilder"
 }, {

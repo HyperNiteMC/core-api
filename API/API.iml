@@ -22,7 +22,7 @@
     <orderEntry type="module-library">
       <library name="Maven: com.ericlam.mc:Paper:1.14.2">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../LIBRARY-SERVER/Paper-1.14.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../LIBRARY-SERVER/paperspigot1.13.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
