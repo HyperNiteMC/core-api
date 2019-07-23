@@ -34,6 +34,6 @@ public class LocationSerializer {
         double z = section.getDouble("z");
         double pitch = section.getDouble("pitch");
         double yaw = section.getDouble("yaw");
-        return Optional.of(new Location(bukkitWorld, x, y, z, (float) pitch, (float) yaw));
+        return Optional.of(new Location(bukkitWorld, x, y, z, (float) yaw, (float) pitch));
     }
 }
