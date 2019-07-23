@@ -20,8 +20,8 @@ public class LocationSerializer {
         serilizer.put("x", location.getX());
         serilizer.put("y", location.getY());
         serilizer.put("z", location.getZ());
-        serilizer.put("pitch", location.getPitch());
-        serilizer.put("yaw", location.getYaw());
+        serilizer.put("pitch", (double) location.getPitch());
+        serilizer.put("yaw", (double) location.getYaw());
         return serilizer;
     }
 
@@ -32,8 +32,8 @@ public class LocationSerializer {
         double x = section.getDouble("x");
         double y = section.getDouble("y");
         double z = section.getDouble("z");
-        float pitch = (float) section.getDouble("pitch");
-        float yaw = (float) section.getDouble("yaw");
-        return Optional.of(new Location(bukkitWorld, x, y, z, pitch, yaw));
+        double pitch = section.getDouble("pitch");
+        double yaw = section.getDouble("yaw");
+        return Optional.of(new Location(bukkitWorld, x, y, z, (float) pitch, (float) yaw));
     }
 }
