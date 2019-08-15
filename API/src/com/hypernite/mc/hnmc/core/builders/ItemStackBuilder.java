@@ -8,15 +8,14 @@ import com.hypernite.mc.hnmc.core.listener.ItemEventAction;
 import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 public class ItemStackBuilder {
     private String onClickId;
@@ -37,11 +36,51 @@ public class ItemStackBuilder {
     }
 
     /**
+     * @param item 現有物品
+     */
+    public ItemStackBuilder(ItemStack item) {
+        this.item = item;
+    }
+
+    /**
      * @param m 物品類型
      * @return this
      */
     public ItemStackBuilder material(Material m) {
         item.setType(m);
+        return this;
+    }
+
+    /**
+     *
+     * @param dur 設置耐久度
+     * @return this
+     */
+    public ItemStackBuilder durability(int dur) {
+        ItemMeta meta = item.getItemMeta();
+        Damageable damageable = (Damageable) meta;
+        damageable.setDamage(dur);
+        item.setItemMeta(meta);
+        return this;
+    }
+
+    /**
+     * @param enchantment 附魔
+     * @param level       等級
+     * @return this
+     */
+    public ItemStackBuilder enchant(Enchantment enchantment, int level) {
+        item.addEnchantment(enchantment, level);
+        return this;
+    }
+
+    /**
+     * @param enchantmentMap 附魔 Map
+     * @return this
+     * @see this#enchant(Enchantment, int)
+     */
+    public ItemStackBuilder enchant(Map<Enchantment, Integer> enchantmentMap) {
+        item.addEnchantments(enchantmentMap);
         return this;
     }
 

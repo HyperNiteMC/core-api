@@ -109,9 +109,8 @@ public interface WorldManager {
     /**
      * @param world 世界
      * @return 是否被禁用
-     * @throws WorldNonExistException 世界不存在
      */
-    boolean isNotAutoLoad(String world) throws WorldNonExistException;
+    boolean isNotAutoLoad(String world);
 
     /**
      * @param world  實際

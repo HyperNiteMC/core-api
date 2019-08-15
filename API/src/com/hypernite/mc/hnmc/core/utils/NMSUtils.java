@@ -17,13 +17,13 @@ public class NMSUtils {
 
     public static String convertItemStackToJson(ItemStack itemStack) {
         // ItemStack methods to get a net.minecraft.server.ItemStack object for serialization
-        Class<?> craftItemStackClazz = ReflectionUtil.getOBCClass("inventory.CraftItemStack");
-        Optional<Method> asNMSCopyMethodOpt = Optional.ofNullable(ReflectionUtil.getMethod(craftItemStackClazz, "asNMSCopy", ItemStack.class));
+        Class<?> craftItemStackClazz = ReflectionUtil.getOBCClass("inventory.CraftItemStack").orElseThrow();
+        Optional<Method> asNMSCopyMethodOpt = ReflectionUtil.getMethod(craftItemStackClazz, "asNMSCopy", ItemStack.class);
 
         // NMS Method to serialize a net.minecraft.server.ItemStack to a valid Json string
-        Class<?> nmsItemStackClazz = ReflectionUtil.getNMSClass("ItemStack");
-        Class<?> nbtTagCompoundClazz = ReflectionUtil.getNMSClass("NBTTagCompound");
-        Optional<Method> saveNmsItemStackMethodOpt = Optional.ofNullable(ReflectionUtil.getMethod(nmsItemStackClazz, "save", nbtTagCompoundClazz));
+        Class<?> nmsItemStackClazz = ReflectionUtil.getNMSClass("ItemStack").orElseThrow();
+        Class<?> nbtTagCompoundClazz = ReflectionUtil.getNMSClass("NBTTagCompound").orElseThrow();
+        Optional<Method> saveNmsItemStackMethodOpt = ReflectionUtil.getMethod(nmsItemStackClazz, "save", nbtTagCompoundClazz);
 
         Object nmsNbtTagCompoundObj; // This will just be an empty NBTTagCompound instance to invoke the saveNms method
         Object nmsItemStackObj; // This is the net.minecraft.server.ItemStack object received from the asNMSCopy method

@@ -3,7 +3,7 @@
 
     <groupId>com.hypernite.mc</groupId>
     <artifactId>HyperNiteMC-Core</artifactId>
-    <version>7.3.5</version>
+    <version>7.3.7</version>
 
     <packaging>pom</packaging>
 
@@ -30,7 +30,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- 指定源代码和编译代码的java版本 -->
         <java.version>11</java.version>
-        <plugin-version>7.3.5</plugin-version>
+        <plugin-version>7.3.7</plugin-version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <module.api>${project.basedir}/API/src</module.api>
@@ -84,9 +84,16 @@
             <dependency>
                 <groupId>com.ericlam.mc</groupId>
                 <artifactId>Paper</artifactId>
-                <version>1.14.2</version>
+                <version>1.14.3</version>
                 <scope>system</scope>
-                <systemPath>${user.home}/Desktop/study/java/LIBRARY-SERVER/paperspigot1.13.2.jar</systemPath>
+                <systemPath>P:/Java/Libraries/servers/Paper-1.14.4.jar</systemPath>
+            </dependency>
+            <dependency>
+                <groupId>com.ericlam.mc</groupId>
+                <artifactId>AsyncCreateWorld</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+                <scope>system</scope>
+                <systemPath>P:/Java/Libraries/plugins/AsyncCreateWorld.jar</systemPath>
             </dependency>
             <dependency>
                 <groupId>com.comphenix.protocol</groupId>
