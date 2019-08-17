@@ -22,6 +22,12 @@ import java.util.concurrent.CompletableFuture;
 public interface WorldManager {
 
     /**
+     * @param name Bukkit世界
+     * @return 世界設定
+     */
+    WorldProperties getWorldProperties(String name) throws WorldNonExistException;
+
+    /**
      * @param world Bukkit世界
      * @return 世界設定
      */
@@ -91,7 +97,7 @@ public interface WorldManager {
      * @return 是否成功
      * @throws WorldNonExistException 世界不存在
      */
-    boolean deleteWorld(String world) throws WorldNonExistException;
+    CompletableFuture<Boolean> deleteWorld(String world) throws WorldNonExistException;
 
     /**
      * @param world 世界名稱
@@ -115,10 +121,9 @@ public interface WorldManager {
     /**
      * @param world  實際
      * @param sender 指令發送者
-     * @return 是否成功
      * @throws WorldNonExistException 世界不存在
      */
-    boolean enableWorld(String world, CommandSender sender) throws WorldNonExistException;
+    void enableWorld(String world, CommandSender sender) throws WorldNonExistException;
 
     /**
      * @return 帶有前綴和顏色辨別的世界列表

@@ -3,7 +3,7 @@
 
     <groupId>com.hypernite.mc</groupId>
     <artifactId>HyperNiteMC-Core</artifactId>
-    <version>7.3.7</version>
+    <version>7.3.8</version>
 
     <packaging>pom</packaging>
 
@@ -30,7 +30,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- 指定源代码和编译代码的java版本 -->
         <java.version>11</java.version>
-        <plugin-version>7.3.7</plugin-version>
+        <plugin-version>7.3.8</plugin-version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <module.api>${project.basedir}/API/src</module.api>
