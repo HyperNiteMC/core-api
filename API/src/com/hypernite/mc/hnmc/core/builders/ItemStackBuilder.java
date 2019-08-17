@@ -75,9 +75,9 @@ public class ItemStackBuilder {
     }
 
     /**
+     *
      * @param enchantmentMap 附魔 Map
      * @return this
-     * @see this#enchant(Enchantment, int)
      */
     public ItemStackBuilder enchant(Map<Enchantment, Integer> enchantmentMap) {
         item.addEnchantments(enchantmentMap);

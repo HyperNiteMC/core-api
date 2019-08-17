@@ -88,19 +88,19 @@ typeSearchIndex = [{
 }, {"p": "com.hypernite.mc.hnmc.core.misc.permission", "l": "Perm"}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "l": "PlayerSkinManager"
-}, {"p": "com.hypernite.mc.hnmc.core.factory", "l": "ReflectionFactory"}, {
-    "p": "com.hypernite.mc.hnmc.core.utils",
-    "l": "ReflectionUtil"
-}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "SQLDataSource"}, {
+}, {"p": "com.hypernite.mc.hnmc.core.config", "l": "RedisData"}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "l": "ReflectionFactory"
+}, {"p": "com.hypernite.mc.hnmc.core.utils", "l": "ReflectionUtil"}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
-    "l": "TabListManager"
-}, {"p": "com.hypernite.mc.hnmc.core.utils", "l": "Tools"}, {
+    "l": "SQLDataSource"
+}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "TabListManager"}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
-    "l": "Utils"
-}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "VaultAPI"}, {
+    "l": "Tools"
+}, {"p": "com.hypernite.mc.hnmc.core.utils", "l": "Utils"}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
-    "l": "WorldManager"
-}, {
+    "l": "VaultAPI"
+}, {"p": "com.hypernite.mc.hnmc.core.managers", "l": "WorldManager"}, {
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "l": "WorldNonExistException"
 }, {"p": "com.hypernite.mc.hnmc.core.misc.world", "l": "WorldProperties"}]

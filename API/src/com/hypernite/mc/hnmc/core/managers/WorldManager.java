@@ -24,6 +24,7 @@ public interface WorldManager {
     /**
      * @param name Bukkit世界
      * @return 世界設定
+     * @throws WorldNonExistException 世界不存在
      */
     WorldProperties getWorldProperties(String name) throws WorldNonExistException;
 

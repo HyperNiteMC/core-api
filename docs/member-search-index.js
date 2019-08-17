@@ -260,10 +260,24 @@ memberSearchIndex = [{
     "l": "doOther(Calculation)",
     "url": "doOther(com.hypernite.mc.hnmc.core.builders.function.Calculation)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "durability(int)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
     "l": "enableWorld(String, CommandSender)",
     "url": "enableWorld(java.lang.String,org.bukkit.command.CommandSender)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "enchant(Enchantment, int)",
+    "url": "enchant(org.bukkit.enchantments.Enchantment,int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "enchant(Map<Enchantment, Integer>)",
+    "url": "enchant(java.util.Map)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "AdvCommandNodeBuilder",
@@ -528,7 +542,7 @@ memberSearchIndex = [{
     "c": "ChatFormatManager",
     "l": "getFormat(Player)",
     "url": "getFormat(org.bukkit.entity.Player)"
-}, {
+}, {"p": "com.hypernite.mc.hnmc.core.config", "c": "RedisData", "l": "getHost()"}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getItemEventManager()"
@@ -551,6 +565,11 @@ memberSearchIndex = [{
     "c": "ReflectionUtil",
     "l": "getMethod(Class<?>, String, Class<?>...)",
     "url": "getMethod(java.lang.Class,java.lang.String,java.lang.Class...)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.utils",
+    "c": "ReflectionUtil",
+    "l": "getMethod(Class<?>, String)",
+    "url": "getMethod(java.lang.Class,java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.factory",
     "c": "ReflectionFactory",
@@ -600,6 +619,10 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "getParent()"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "RedisData",
+    "l": "getPassword()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
     "l": "getPermHierarchy(String)",
@@ -629,6 +652,10 @@ memberSearchIndex = [{
     "c": "ConfigSetter",
     "l": "getPlugin()"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "RedisData",
+    "l": "getPort()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "CoreConfig",
     "l": "getPrefix()"
@@ -637,6 +664,10 @@ memberSearchIndex = [{
     "c": "ConfigManager",
     "l": "getPureMessage(String)",
     "url": "getPureMessage(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "CoreConfig",
+    "l": "getRedisData()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.factory",
     "c": "CoreFactory",
@@ -694,6 +725,10 @@ memberSearchIndex = [{
     "l": "getTextureValue(UUID)",
     "url": "getTextureValue(java.util.UUID)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "RedisData",
+    "l": "getTimeout()"
+}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getVaultAPI()"
@@ -722,6 +757,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.main",
     "c": "HyperNiteMC",
     "l": "getWorldManager()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "WorldManager",
+    "l": "getWorldProperties(String)",
+    "url": "getWorldProperties(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
@@ -862,6 +902,11 @@ memberSearchIndex = [{
     "c": "ItemStackBuilder",
     "l": "ItemStackBuilder()",
     "url": "%3Cinit%3E()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "ItemStackBuilder(ItemStack)",
+    "url": "%3Cinit%3E(org.bukkit.inventory.ItemStack)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
@@ -1378,6 +1423,10 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "url(String)",
     "url": "url(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "RedisData",
+    "l": "usePassword()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "Utils",
