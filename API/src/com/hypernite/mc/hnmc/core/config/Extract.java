@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
  *
  * @author Eric Lam
  */
+@Deprecated
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface Extract {

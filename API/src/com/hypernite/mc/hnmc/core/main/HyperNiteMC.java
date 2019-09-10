@@ -38,6 +38,7 @@ public class HyperNiteMC implements HyperNiteMCAPI {
 
 
     @Override
+    @Deprecated
     public ConfigManager registerConfig(ConfigSetter setter) {
         throw new RuntimeException("RUNTIME ERROR");
     }

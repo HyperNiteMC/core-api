@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+@Deprecated
 public abstract class ConfigSetter {
     private Plugin plugin;
     private List<String> configs = new ArrayList<>();

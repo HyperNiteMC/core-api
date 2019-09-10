@@ -19,6 +19,7 @@ public interface HyperNiteMCAPI {
 
     CoreFactory getFactory();
 
+    @Deprecated
     ConfigManager registerConfig(ConfigSetter setter);
 
     CoreScheduler getCoreSchelder();

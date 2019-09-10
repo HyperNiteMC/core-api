@@ -1,5 +1,7 @@
 package com.hypernite.mc.hnmc.core.factory;
 
+import com.hypernite.mc.hnmc.core.config.ConfigFactory;
+
 public interface CoreFactory {
 
     /**
@@ -7,5 +9,7 @@ public interface CoreFactory {
      * @return 反射工廠
      */
     ReflectionFactory getReflectionFactory(final String className);
+
+    ConfigFactory getConfigFactory();
 
 }
