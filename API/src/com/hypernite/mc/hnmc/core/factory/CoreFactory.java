@@ -1,6 +1,7 @@
 package com.hypernite.mc.hnmc.core.factory;
 
 import com.hypernite.mc.hnmc.core.config.ConfigFactory;
+import org.bukkit.plugin.Plugin;
 
 public interface CoreFactory {
 
@@ -11,8 +12,9 @@ public interface CoreFactory {
     ReflectionFactory getReflectionFactory(final String className);
 
     /**
+     * @param plugin 需要創建文件的插件實例
      * @return 文件工廠
      */
-    ConfigFactory getConfigFactory();
+    ConfigFactory getConfigFactory(Plugin plugin);
 
 }

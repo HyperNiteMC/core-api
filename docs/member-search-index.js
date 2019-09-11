@@ -458,7 +458,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.factory",
     "c": "CoreFactory",
-    "l": "getConfigFactory()"
+    "l": "getConfigFactory(Plugin)",
+    "url": "getConfigFactory(org.bukkit.plugin.Plugin)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.config",
     "c": "ConfigSetter",
