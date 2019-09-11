@@ -4,7 +4,6 @@ import com.comphenix.protocol.utility.MinecraftReflection;
 import com.comphenix.protocol.wrappers.nbt.NbtCompound;
 import com.comphenix.protocol.wrappers.nbt.NbtFactory;
 import com.comphenix.protocol.wrappers.nbt.NbtWrapper;
-import com.hypernite.mc.hnmc.core.listener.ItemEventAction;
 import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -16,13 +15,14 @@ import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.*;
+import java.util.function.Consumer;
 
 public class ItemStackBuilder {
     private String onClickId;
     private String onInteractId;
     private ItemStack item;
-    private ItemEventAction<InventoryClickEvent> clickAction;
-    private ItemEventAction<PlayerInteractEvent> interactAction;
+    private Consumer<InventoryClickEvent> clickAction;
+    private Consumer<PlayerInteractEvent> interactAction;
 
     /**
      * @param m 物品類型
@@ -138,7 +138,7 @@ public class ItemStackBuilder {
      * @param action 點擊事件
      * @return this
      */
-    public ItemStackBuilder onClick(ItemEventAction<InventoryClickEvent> action) {
+    public ItemStackBuilder onClick(Consumer<InventoryClickEvent> action) {
         this.onClickId = UUID.randomUUID().toString();
         this.clickAction = action;
         return this;
@@ -148,7 +148,7 @@ public class ItemStackBuilder {
      * @param action 物品交互事件
      * @return this
      */
-    public ItemStackBuilder onInteract(ItemEventAction<PlayerInteractEvent> action) {
+    public ItemStackBuilder onInteract(Consumer<PlayerInteractEvent> action) {
         this.onInteractId = UUID.randomUUID().toString();
         this.interactAction = action;
         return this;

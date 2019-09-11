@@ -1,6 +1,5 @@
 package com.hypernite.mc.hnmc.core.builders;
 
-import com.hypernite.mc.hnmc.core.builders.function.ChatRunner;
 import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
 import com.hypernite.mc.hnmc.core.utils.NMSUtils;
 import net.md_5.bungee.api.chat.*;
@@ -10,11 +9,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.UUID;
+import java.util.function.Consumer;
 
 public class MessageBuilder {
     private ComponentBuilder componentBuilder;
     private UUID id;
-    private ChatRunner runner;
+    private Consumer<Player> runner;
     private int timeoutSeconds = -1;
     private int timeoutClicks = -1;
 
@@ -175,7 +175,7 @@ public class MessageBuilder {
      * @param runner 運行函式
      * @return this
      */
-    public MessageBuilder run(ChatRunner runner) {
+    public MessageBuilder run(Consumer<Player> runner) {
         this.id = UUID.randomUUID();
         this.runner = runner;
         this.timeoutSeconds = 600;
@@ -188,7 +188,7 @@ public class MessageBuilder {
      * @param runner 運行函式
      * @return this
      */
-    public MessageBuilder runClicks(int timeoutClicks, ChatRunner runner) {
+    public MessageBuilder runClicks(int timeoutClicks, Consumer<Player> runner) {
         this.id = UUID.randomUUID();
         this.runner = runner;
         this.timeoutClicks = timeoutClicks;
@@ -201,7 +201,7 @@ public class MessageBuilder {
      * @param runner         運行函式
      * @return this
      */
-    public MessageBuilder runTimeout(int timeoutSeconds, ChatRunner runner) {
+    public MessageBuilder runTimeout(int timeoutSeconds, Consumer<Player> runner) {
         this.id = UUID.randomUUID();
         this.runner = runner;
         this.timeoutSeconds = timeoutSeconds;

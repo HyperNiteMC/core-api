@@ -116,7 +116,6 @@
 	/* support: IE10, see #8844 */
 	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 }
-
 .ui-menu .ui-menu-item-wrapper {
     position: relative;
     padding: 3px 1em 3px .4em;
@@ -137,7 +136,6 @@
 .ui-menu-icons {
 	position: relative;
 }
-
 .ui-menu-icons .ui-menu-item-wrapper {
 	padding-left: 2em;
 }

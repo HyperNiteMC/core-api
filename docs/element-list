@@ -1,7 +1,7 @@
 com.hypernite.mc.hnmc.core
 com.hypernite.mc.hnmc.core.builders
-com.hypernite.mc.hnmc.core.builders.function
 com.hypernite.mc.hnmc.core.config
+com.hypernite.mc.hnmc.core.config.yaml
 com.hypernite.mc.hnmc.core.factory
 com.hypernite.mc.hnmc.core.listener
 com.hypernite.mc.hnmc.core.main

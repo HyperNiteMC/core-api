@@ -129,10 +129,6 @@ memberSearchIndex = [{
     "c": "Perm",
     "l": "BUILDER"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.builders.function",
-    "c": "Calculation",
-    "l": "cal(double)"
-}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
     "l": "CalculationBuilder(double)",
@@ -257,8 +253,12 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
-    "l": "doOther(Calculation)",
-    "url": "doOther(com.hypernite.mc.hnmc.core.builders.function.Calculation)"
+    "l": "doOther(Function<Double, Double>)",
+    "url": "doOther(java.util.function.Function)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "ConfigFactory",
+    "l": "dump()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
@@ -446,6 +446,20 @@ memberSearchIndex = [{
     "l": "getConfig(String)",
     "url": "getConfig(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
+    "l": "getConfig(String)",
+    "url": "getConfig(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
+    "l": "getConfigAs(String, Class<T>)",
+    "url": "getConfigAs(java.lang.String,java.lang.Class)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.factory",
+    "c": "CoreFactory",
+    "l": "getConfigFactory()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.config",
     "c": "ConfigSetter",
     "l": "getConfigs()"
@@ -539,6 +553,11 @@ memberSearchIndex = [{
     "url": "getField(java.lang.Class,java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
+    "l": "getFileConfig(String)",
+    "url": "getFileConfig(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ChatFormatManager",
     "l": "getFormat(Player)",
     "url": "getFormat(org.bukkit.entity.Player)"
@@ -553,6 +572,11 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ConfigManager",
+    "l": "getMessage(String)",
+    "url": "getMessage(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
     "l": "getMessage(String)",
     "url": "getMessage(java.lang.String)"
 }, {
@@ -656,12 +680,21 @@ memberSearchIndex = [{
     "c": "RedisData",
     "l": "getPort()"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "MessageConfiguration",
+    "l": "getPrefix()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "CoreConfig",
     "l": "getPrefix()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ConfigManager",
+    "l": "getPureMessage(String)",
+    "url": "getPureMessage(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
     "l": "getPureMessage(String)",
     "url": "getPureMessage(java.lang.String)"
 }, {
@@ -941,6 +974,10 @@ memberSearchIndex = [{
     "l": "loadWorld(String, CommandSender)",
     "url": "loadWorld(java.lang.String,org.bukkit.command.CommandSender)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "Resource",
+    "l": "locate()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils.converters",
     "c": "LocationSerializer",
     "l": "LocationSerializer()",
@@ -991,6 +1028,11 @@ memberSearchIndex = [{
     "l": "MessageBuilder(String)",
     "url": "%3Cinit%3E(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "MessageConfiguration",
+    "l": "MessageConfiguration()",
+    "url": "%3Cinit%3E()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
     "l": "minus(double)"
@@ -1027,21 +1069,17 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
-    "l": "onClick(ItemEventAction<InventoryClickEvent>)",
-    "url": "onClick(com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+    "l": "onClick(Consumer<InventoryClickEvent>)",
+    "url": "onClick(java.util.function.Consumer)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "InventoryBuilder",
     "l": "ONE_ROW"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.listener",
-    "c": "ItemEventAction",
-    "l": "onEvent(E)"
-}, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
-    "l": "onInteract(ItemEventAction<PlayerInteractEvent>)",
-    "url": "onInteract(com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+    "l": "onInteract(Consumer<PlayerInteractEvent>)",
+    "url": "onInteract(java.util.function.Consumer)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
@@ -1066,6 +1104,14 @@ memberSearchIndex = [{
     "c": "DefaultCommandBuilder",
     "l": "parent(CommandNode)",
     "url": "parent(com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "Prop",
+    "l": "path()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "Prefix",
+    "l": "path()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
@@ -1125,10 +1171,15 @@ memberSearchIndex = [{
     "l": "ReflectionUtil()",
     "url": "%3Cinit%3E()"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.builders.function",
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "ConfigFactory",
+    "l": "register(String, Class<? extends Configuration>)",
+    "url": "register(java.lang.String,java.lang.Class)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.listener",
     "c": "ChatRunnerManager",
-    "l": "registerClicks(UUID, ChatRunner, int)",
-    "url": "registerClicks(java.util.UUID,com.hypernite.mc.hnmc.core.builders.function.ChatRunner,int)"
+    "l": "registerClicks(UUID, Consumer<Player>, int)",
+    "url": "registerClicks(java.util.UUID,java.util.function.Consumer,int)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "CommandRegister",
@@ -1147,13 +1198,13 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.listener",
     "c": "ItemEventManager",
-    "l": "registerItem(String, ItemEventAction)",
-    "url": "registerItem(java.lang.String,com.hypernite.mc.hnmc.core.listener.ItemEventAction)"
+    "l": "registerItem(String, Consumer<? extends Event>)",
+    "url": "registerItem(java.lang.String,java.util.function.Consumer)"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.builders.function",
+    "p": "com.hypernite.mc.hnmc.core.listener",
     "c": "ChatRunnerManager",
-    "l": "registerTimeout(UUID, ChatRunner, int)",
-    "url": "registerTimeout(java.util.UUID,com.hypernite.mc.hnmc.core.builders.function.ChatRunner,int)"
+    "l": "registerTimeout(UUID, Consumer<Player>, int)",
+    "url": "registerTimeout(java.util.UUID,java.util.function.Consumer,int)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ConfigManager",
@@ -1163,6 +1214,15 @@ memberSearchIndex = [{
     "c": "ConfigManager",
     "l": "reloadConfig(String)",
     "url": "reloadConfig(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
+    "l": "reloadConfig(String)",
+    "url": "reloadConfig(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
+    "l": "reloadConfigs()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.listener",
     "c": "ItemEventManager",
@@ -1188,13 +1248,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
-    "l": "run(ChatRunner)",
-    "url": "run(com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.builders.function",
-    "c": "ChatRunner",
-    "l": "run(Player)",
-    "url": "run(org.bukkit.entity.Player)"
+    "l": "run(Consumer<Player>)",
+    "url": "run(java.util.function.Consumer)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "CoreScheduler",
@@ -1208,8 +1263,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
-    "l": "runClicks(int, ChatRunner)",
-    "url": "runClicks(int,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
+    "l": "runClicks(int, Consumer<Player>)",
+    "url": "runClicks(int,java.util.function.Consumer)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "CoreScheduler",
@@ -1223,8 +1278,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",
-    "l": "runTimeout(int, ChatRunner)",
-    "url": "runTimeout(int,com.hypernite.mc.hnmc.core.builders.function.ChatRunner)"
+    "l": "runTimeout(int, Consumer<Player>)",
+    "url": "runTimeout(int,java.util.function.Consumer)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",

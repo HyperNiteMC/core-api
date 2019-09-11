@@ -1,6 +1,6 @@
 package com.hypernite.mc.hnmc.core.builders;
 
-import com.hypernite.mc.hnmc.core.builders.function.Calculation;
+import java.util.function.Function;
 
 /**
  * 計算機
@@ -100,10 +100,9 @@ public class CalculationBuilder {
     /**
      * @param calculate 計算函式
      * @return this
-     * @see Calculation
      */
-    public CalculationBuilder doOther(Calculation calculate) {
-        this.result = calculate.cal(this.result);
+    public CalculationBuilder doOther(Function<Double, Double> calculate) {
+        this.result = calculate.apply(this.result);
         return this;
     }
 

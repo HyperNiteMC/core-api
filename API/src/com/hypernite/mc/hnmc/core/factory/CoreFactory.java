@@ -10,6 +10,9 @@ public interface CoreFactory {
      */
     ReflectionFactory getReflectionFactory(final String className);
 
+    /**
+     * @return 文件工廠
+     */
     ConfigFactory getConfigFactory();
 
 }
