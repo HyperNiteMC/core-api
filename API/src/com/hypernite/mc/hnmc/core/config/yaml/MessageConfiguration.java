@@ -4,7 +4,7 @@ package com.hypernite.mc.hnmc.core.config.yaml;
 /**
  * 用於創建 訊息類別 config 時繼承
  */
-public abstract class MessageConfiguration implements Configuration {
+public abstract class MessageConfiguration extends Configuration {
 
     private String prefix;
 

@@ -23,11 +23,30 @@ public interface YamlManager {
     boolean reloadConfig(String yml);
 
     /**
+     * 重載單一文件
+     *
+     * @param config 映射物件類
+     * @param <T>    映射物件類
+     * @return 成功
+     */
+    <T extends Configuration> boolean reloadConfig(Class<T> config);
+
+    /**
+     * @deprecated
      * 獲取源文件
      * @param yml 文件名稱
      * @return 源文件
      */
+    @Deprecated
     FileConfiguration getFileConfig(String yml);
+
+    /**
+     * 獲取源文件
+     *
+     * @param config 映射物件類
+     * @return 源文件
+     */
+    FileConfiguration getFileConfig(Class<? extends Configuration> config);
 
     /**
      *
@@ -39,12 +58,11 @@ public interface YamlManager {
 
     /**
      *
-     * @param yml 文件名稱
-     * @param type 映射物件類
+     * @param config 映射物件類
      * @param <T> 映射接口
      * @return 映射物件
      */
-    <T extends Configuration> T getConfigAs(String yml, Class<T> type);
+    <T extends Configuration> T getConfigAs(Class<T> config);
 
     /**
      * @param path 路徑

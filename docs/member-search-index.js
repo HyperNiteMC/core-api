@@ -183,6 +183,11 @@ memberSearchIndex = [{
     "l": "ConfigSetter(Plugin, String...)",
     "url": "%3Cinit%3E(org.bukkit.plugin.Plugin,java.lang.String...)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "Configuration",
+    "l": "Configuration()",
+    "url": "%3Cinit%3E()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "NMSUtils",
     "l": "convertEntityToJson(Entity)",
@@ -453,8 +458,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "YamlManager",
-    "l": "getConfigAs(String, Class<T>)",
-    "url": "getConfigAs(java.lang.String,java.lang.Class)"
+    "l": "getConfigAs(Class<T>)",
+    "url": "getConfigAs(java.lang.Class)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.factory",
     "c": "CoreFactory",
@@ -468,6 +473,10 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ConfigManager",
     "l": "getConfigSetter()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "Configuration",
+    "l": "getConfiguration()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "SQLDataSource",
@@ -552,6 +561,11 @@ memberSearchIndex = [{
     "c": "ReflectionUtil",
     "l": "getField(Class<?>, String)",
     "url": "getField(java.lang.Class,java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
+    "l": "getFileConfig(Class<? extends Configuration>)",
+    "url": "getFileConfig(java.lang.Class)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "YamlManager",
@@ -1210,6 +1224,11 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ConfigManager",
     "l": "reloadAllConfigs()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.managers",
+    "c": "YamlManager",
+    "l": "reloadConfig(Class<T>)",
+    "url": "reloadConfig(java.lang.Class)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ConfigManager",
