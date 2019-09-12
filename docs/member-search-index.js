@@ -1301,6 +1301,10 @@ memberSearchIndex = [{
     "l": "runTimeout(int, Consumer<Player>)",
     "url": "runTimeout(int,java.util.function.Consumer)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "Configuration",
+    "l": "save()"
+}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
     "l": "saveAll()"
