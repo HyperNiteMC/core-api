@@ -284,6 +284,10 @@ memberSearchIndex = [{
     "l": "enchant(Map<Enchantment, Integer>)",
     "url": "enchant(java.util.Map)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "END"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "AdvCommandNodeBuilder",
     "l": "execute(AdvCmdExecution<Boolean, Sender>)",
@@ -1096,6 +1100,11 @@ memberSearchIndex = [{
     "l": "onInteract(Consumer<PlayerInteractEvent>)",
     "url": "onInteract(java.util.function.Consumer)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "ItemStackBuilder",
+    "l": "openGui(Supplier<Inventory>)",
+    "url": "openGui(java.util.function.Supplier)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
     "l": "OWNER"
@@ -1437,6 +1446,10 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
     "l": "stack(int)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.builders",
+    "c": "InventoryBuilder",
+    "l": "START"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "MessageBuilder",

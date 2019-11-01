@@ -10,12 +10,14 @@ import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.*;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class ItemStackBuilder {
     private String onClickId;
@@ -52,7 +54,6 @@ public class ItemStackBuilder {
     }
 
     /**
-     *
      * @param dur 設置耐久度
      * @return this
      */
@@ -75,12 +76,20 @@ public class ItemStackBuilder {
     }
 
     /**
-     *
      * @param enchantmentMap 附魔 Map
      * @return this
      */
     public ItemStackBuilder enchant(Map<Enchantment, Integer> enchantmentMap) {
         item.addEnchantments(enchantmentMap);
+        return this;
+    }
+
+    /**
+     * @param inventorySupplier 背包界面
+     * @return this
+     */
+    public ItemStackBuilder openGui(Supplier<Inventory> inventorySupplier) {
+        this.onClick(e -> e.getWhoClicked().openInventory(inventorySupplier.get()));
         return this;
     }
 

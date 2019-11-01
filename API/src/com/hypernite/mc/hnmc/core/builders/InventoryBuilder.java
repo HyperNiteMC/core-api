@@ -6,8 +6,23 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 public class InventoryBuilder {
+    /**
+     * 第一行
+     */
     public static final int ONE_ROW = 9;
-    public static final int CENTER = 5;
+    /**
+     * 中央位置
+     */
+    public static final int CENTER = 4;
+    /**
+     * 初始位置
+     */
+    public static final int START = 0;
+    /**
+     * 尾部位置
+     */
+    public static final int END = 8;
+
     private Inventory inventory;
     private int row;
 
@@ -43,14 +58,16 @@ public class InventoryBuilder {
     }
 
     /**
+     * start from row 1, slot 0
+     *
      * @param row  行數
      * @param slot 欄位
      * @param item 物品
      * @return this
      */
-    //start from row 1, slot 1
+
     public InventoryBuilder item(int row, int slot, ItemStack item) {
-        inventory.setItem((row - 1) * ONE_ROW + slot - 1, item);
+        inventory.setItem((row - 1) * ONE_ROW + slot, item);
         return this;
     }
 
@@ -83,8 +100,8 @@ public class InventoryBuilder {
             if (i == 1 || i == this.row) {
                 this.fillRow(i, item);
             } else {
-                this.item(i, 1, item);
-                this.item(i, 9, item);
+                this.item(i, START, item);
+                this.item(i, END, item);
             }
         }
         return this;
@@ -98,7 +115,7 @@ public class InventoryBuilder {
      * @return this
      */
     public InventoryBuilder fillRow(int row, ItemStack item) {
-        for (int i = 1; i < ONE_ROW + 1; i++) {
+        for (int i = 1; i < ONE_ROW; i++) {
             this.item(row, i, item);
         }
         return this;
