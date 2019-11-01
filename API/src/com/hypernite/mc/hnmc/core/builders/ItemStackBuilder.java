@@ -89,7 +89,7 @@ public class ItemStackBuilder {
      * @return this
      */
     public ItemStackBuilder openGui(Supplier<Inventory> inventorySupplier) {
-        this.onClick(e -> e.getWhoClicked().openInventory(inventorySupplier.get()));
+        this.onClick(e -> HyperNiteMC.getAPI().getCoreSchelder().runTask(() -> e.getWhoClicked().openInventory(inventorySupplier.get())));
         return this;
     }
 
