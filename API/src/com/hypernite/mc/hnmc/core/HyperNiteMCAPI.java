@@ -1,6 +1,5 @@
 package com.hypernite.mc.hnmc.core;
 
-import com.hypernite.mc.hnmc.core.config.ConfigSetter;
 import com.hypernite.mc.hnmc.core.factory.CoreFactory;
 import com.hypernite.mc.hnmc.core.listener.ChatRunnerManager;
 import com.hypernite.mc.hnmc.core.listener.ItemEventManager;
@@ -28,14 +27,6 @@ public interface HyperNiteMCAPI {
      * @return 工廠
      */
     CoreFactory getFactory();
-
-    /**
-     * @deprecated
-     * @param setter config setter
-     * @return 舊的 Config 管理器
-     */
-    @Deprecated
-    ConfigManager registerConfig(ConfigSetter setter);
 
     /**
      *
