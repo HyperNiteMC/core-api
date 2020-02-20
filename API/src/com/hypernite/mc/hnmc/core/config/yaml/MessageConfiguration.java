@@ -21,18 +21,34 @@ public abstract class MessageConfiguration extends Configuration {
         return messageGetter.getPrefix();
     }
 
+    /**
+     * @param path 路徑
+     * @return 獲取訊息
+     */
     public String get(String path) {
         return messageGetter.get(path);
     }
 
+    /**
+     * @param path 路徑
+     * @return 獲取無前綴訊息
+     */
     public String getPure(String path) {
         return messageGetter.getPure(path);
     }
 
+    /**
+     * @param path 路徑
+     * @return 獲取無前綴訊息列表
+     */
     public List<String> getPureList(String path) {
         return messageGetter.getPureList(path);
     }
 
+    /**
+     * @param path 路徑
+     * @return 獲取訊息列表
+     */
     public List<String> getList(String path) {
         return messageGetter.getList(path);
     }

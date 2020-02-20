@@ -178,11 +178,6 @@ memberSearchIndex = [{
     "l": "CommandPermissionException(String)",
     "url": "%3Cinit%3E(java.lang.String)"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "ConfigSetter",
-    "l": "ConfigSetter(Plugin, String...)",
-    "url": "%3Cinit%3E(org.bukkit.plugin.Plugin,java.lang.String...)"
-}, {
     "p": "com.hypernite.mc.hnmc.core.config.yaml",
     "c": "Configuration",
     "l": "Configuration()",
@@ -378,6 +373,16 @@ memberSearchIndex = [{
     "l": "futureLoadWorld(String)",
     "url": "futureLoadWorld(java.lang.String)"
 }, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "MessageGetter",
+    "l": "get(String)",
+    "url": "get(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "MessageConfiguration",
+    "l": "get(String)",
+    "url": "get(java.lang.String)"
+}, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "HttpRequest",
     "l": "get(String)",
@@ -451,11 +456,6 @@ memberSearchIndex = [{
     "l": "getCommandRegister()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getConfig(String)",
-    "url": "getConfig(java.lang.String)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "YamlManager",
     "l": "getConfig(String)",
     "url": "getConfig(java.lang.String)"
@@ -469,18 +469,6 @@ memberSearchIndex = [{
     "c": "CoreFactory",
     "l": "getConfigFactory(Plugin)",
     "url": "getConfigFactory(org.bukkit.plugin.Plugin)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "ConfigSetter",
-    "l": "getConfigs()"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getConfigSetter()"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.config.yaml",
-    "c": "Configuration",
-    "l": "getConfiguration()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "SQLDataSource",
@@ -513,30 +501,6 @@ memberSearchIndex = [{
     "l": "getCoreSchelder()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getData(String, Class<T>)",
-    "url": "getData(java.lang.String,java.lang.Class)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getData(String)",
-    "url": "getData(java.lang.String)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "CoreConfig",
-    "l": "getDataBase()"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getDataList(String, Class<T>)",
-    "url": "getDataList(java.lang.String,java.lang.Class)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getDataMap(String, Class<K>, Class<V>)",
-    "url": "getDataMap(java.lang.String,java.lang.Class,java.lang.Class)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "SQLDataSource",
     "l": "getDataSource()"
 }, {
@@ -567,20 +531,10 @@ memberSearchIndex = [{
     "url": "getField(java.lang.Class,java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "YamlManager",
-    "l": "getFileConfig(Class<? extends Configuration>)",
-    "url": "getFileConfig(java.lang.Class)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "YamlManager",
-    "l": "getFileConfig(String)",
-    "url": "getFileConfig(java.lang.String)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "ChatFormatManager",
     "l": "getFormat(Player)",
     "url": "getFormat(org.bukkit.entity.Player)"
-}, {"p": "com.hypernite.mc.hnmc.core.config", "c": "RedisData", "l": "getHost()"}, {
+}, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
     "l": "getItemEventManager()"
@@ -590,19 +544,22 @@ memberSearchIndex = [{
     "l": "getItemEventManager()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getMessage(String)",
-    "url": "getMessage(java.lang.String)"
+    "c": "RedisDataSource",
+    "l": "getJedis()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "YamlManager",
-    "l": "getMessage(String)",
-    "url": "getMessage(java.lang.String)"
+    "c": "RedisDataSource",
+    "l": "getJedisPool()"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getMessageList(String, boolean)",
-    "url": "getMessageList(java.lang.String,boolean)"
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "MessageGetter",
+    "l": "getList(String)",
+    "url": "getList(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "MessageConfiguration",
+    "l": "getList(String)",
+    "url": "getList(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "ReflectionUtil",
@@ -662,10 +619,6 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "getParent()"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "RedisData",
-    "l": "getPassword()"
-}, {
     "p": "com.hypernite.mc.hnmc.core.misc.permission",
     "c": "Perm",
     "l": "getPermHierarchy(String)",
@@ -692,12 +645,8 @@ memberSearchIndex = [{
     "l": "getPlayerSkinManager()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "ConfigSetter",
-    "l": "getPlugin()"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "RedisData",
-    "l": "getPort()"
+    "c": "MessageGetter",
+    "l": "getPrefix()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.config.yaml",
     "c": "MessageConfiguration",
@@ -707,19 +656,33 @@ memberSearchIndex = [{
     "c": "CoreConfig",
     "l": "getPrefix()"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "getPureMessage(String)",
-    "url": "getPureMessage(java.lang.String)"
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "MessageGetter",
+    "l": "getPure(String)",
+    "url": "getPure(java.lang.String)"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "YamlManager",
-    "l": "getPureMessage(String)",
-    "url": "getPureMessage(java.lang.String)"
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "MessageConfiguration",
+    "l": "getPure(String)",
+    "url": "getPure(java.lang.String)"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "CoreConfig",
-    "l": "getRedisData()"
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "MessageGetter",
+    "l": "getPureList(String)",
+    "url": "getPureList(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "MessageConfiguration",
+    "l": "getPureList(String)",
+    "url": "getPureList(java.lang.String)"
+}, {
+    "p": "com.hypernite.mc.hnmc.core",
+    "c": "HyperNiteMCAPI",
+    "l": "getRedisDataSource()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.main",
+    "c": "HyperNiteMC",
+    "l": "getRedisDataSource()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.factory",
     "c": "CoreFactory",
@@ -776,10 +739,6 @@ memberSearchIndex = [{
     "c": "PlayerSkinManager",
     "l": "getTextureValue(UUID)",
     "url": "getTextureValue(java.util.UUID)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "RedisData",
-    "l": "getTimeout()"
 }, {
     "p": "com.hypernite.mc.hnmc.core",
     "c": "HyperNiteMCAPI",
@@ -983,11 +942,6 @@ memberSearchIndex = [{
     "c": "WorldManager",
     "l": "listWorlds()"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "ConfigSetter",
-    "l": "loadConfig(Map<String, FileConfiguration>)",
-    "url": "loadConfig(java.util.Map)"
-}, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
     "l": "loadWorld(String, CommandSender)",
@@ -996,16 +950,6 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.config.yaml",
     "c": "Resource",
     "l": "locate()"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.utils.converters",
-    "c": "LocationSerializer",
-    "l": "LocationSerializer()",
-    "url": "%3Cinit%3E()"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.utils.converters",
-    "c": "LocationSerializer",
-    "l": "locToConfigSection(Location)",
-    "url": "locToConfigSection(org.bukkit.Location)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "ItemStackBuilder",
@@ -1016,11 +960,6 @@ memberSearchIndex = [{
     "c": "ItemStackBuilder",
     "l": "lore(String)",
     "url": "lore(java.lang.String)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.utils.converters",
-    "c": "LocationSerializer",
-    "l": "mapToLocation(ConfigurationSection)",
-    "url": "mapToLocation(org.bukkit.configuration.ConfigurationSection)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.commands",
     "c": "CommandNode",
@@ -1063,10 +1002,6 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "CalculationBuilder",
     "l": "multiply(double)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "Extract",
-    "l": "name()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.builders",
     "c": "AdvMessageBuilder",
@@ -1128,10 +1063,6 @@ memberSearchIndex = [{
     "c": "DefaultCommandBuilder",
     "l": "parent(CommandNode)",
     "url": "parent(com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "Prop",
-    "l": "path()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.config.yaml",
     "c": "Prefix",
@@ -1210,16 +1141,6 @@ memberSearchIndex = [{
     "l": "registerCommand(JavaPlugin, CommandNode)",
     "url": "registerCommand(org.bukkit.plugin.java.JavaPlugin,com.hypernite.mc.hnmc.core.misc.commands.CommandNode)"
 }, {
-    "p": "com.hypernite.mc.hnmc.core",
-    "c": "HyperNiteMCAPI",
-    "l": "registerConfig(ConfigSetter)",
-    "url": "registerConfig(com.hypernite.mc.hnmc.core.config.ConfigSetter)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.main",
-    "c": "HyperNiteMC",
-    "l": "registerConfig(ConfigSetter)",
-    "url": "registerConfig(com.hypernite.mc.hnmc.core.config.ConfigSetter)"
-}, {
     "p": "com.hypernite.mc.hnmc.core.listener",
     "c": "ItemEventManager",
     "l": "registerItem(String, Consumer<? extends Event>)",
@@ -1230,24 +1151,13 @@ memberSearchIndex = [{
     "l": "registerTimeout(UUID, Consumer<Player>, int)",
     "url": "registerTimeout(java.util.UUID,java.util.function.Consumer,int)"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "reloadAllConfigs()"
+    "p": "com.hypernite.mc.hnmc.core.config.yaml",
+    "c": "Configuration",
+    "l": "reload()"
 }, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "YamlManager",
-    "l": "reloadConfig(Class<T>)",
-    "url": "reloadConfig(java.lang.Class)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "reloadConfig(String)",
-    "url": "reloadConfig(java.lang.String)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "YamlManager",
-    "l": "reloadConfig(String)",
-    "url": "reloadConfig(java.lang.String)"
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "FileController",
+    "l": "reload(T)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "YamlManager",
@@ -1313,6 +1223,10 @@ memberSearchIndex = [{
     "p": "com.hypernite.mc.hnmc.core.config.yaml",
     "c": "Configuration",
     "l": "save()"
+}, {
+    "p": "com.hypernite.mc.hnmc.core.config",
+    "c": "FileController",
+    "l": "save(T)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.managers",
     "c": "WorldManager",
@@ -1381,16 +1295,6 @@ memberSearchIndex = [{
     "c": "TabListManager",
     "l": "setHeaderFooter(String, String, Player)",
     "url": "setHeaderFooter(java.lang.String,java.lang.String,org.bukkit.entity.Player)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "setMsgConfig(String, String)",
-    "url": "setMsgConfig(java.lang.String,java.lang.String)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.managers",
-    "c": "ConfigManager",
-    "l": "setMsgConfig(String)",
-    "url": "setMsgConfig(java.lang.String)"
 }, {
     "p": "com.hypernite.mc.hnmc.core.misc.world",
     "c": "WorldProperties",
@@ -1515,10 +1419,6 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "url(String)",
     "url": "url(java.lang.String)"
-}, {
-    "p": "com.hypernite.mc.hnmc.core.config",
-    "c": "RedisData",
-    "l": "usePassword()"
 }, {
     "p": "com.hypernite.mc.hnmc.core.utils",
     "c": "Utils",

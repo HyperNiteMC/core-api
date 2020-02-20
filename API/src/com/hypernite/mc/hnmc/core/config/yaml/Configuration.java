@@ -12,12 +12,15 @@ public abstract class Configuration {
     private FileController controller;
 
     /**
-     * 保存源文件
+     * 保存文件
      */
     public void save() throws IOException {
         controller.save(this);
     }
 
+    /**
+     * 重載文件
+     */
     public void reload() {
         controller.reload(this);
     }
