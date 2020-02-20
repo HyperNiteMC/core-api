@@ -2,6 +2,8 @@ package com.hypernite.mc.hnmc.core.config.yaml;
 
 import com.hypernite.mc.hnmc.core.config.FileController;
 
+import java.io.IOException;
+
 /**
  * 用於創建 Config class 時繼承
  */
@@ -12,7 +14,7 @@ public abstract class Configuration {
     /**
      * 保存源文件
      */
-    public void save() {
+    public void save() throws IOException {
         controller.save(this);
     }
 
