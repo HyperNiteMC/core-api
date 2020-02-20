@@ -1,7 +1,5 @@
 package com.hypernite.mc.hnmc.core.managers;
 
-import com.hypernite.mc.hnmc.core.config.RedisData;
-
 public interface CoreConfig {
 
     /**
@@ -23,9 +21,4 @@ public interface CoreConfig {
      * @return 找不到玩家訊息
      */
     String getNotFoundPlayer();
-
-    /**
-     * @return Redis 的資料
-     */
-    RedisData getRedisData();
 }

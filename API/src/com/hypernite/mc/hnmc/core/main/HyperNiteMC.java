@@ -61,6 +61,11 @@ public class HyperNiteMC implements HyperNiteMCAPI {
     }
 
     @Override
+    public RedisDataSource getRedisDataSource() {
+        throw new RuntimeException("RUNTIME ERROR");
+    }
+
+    @Override
     public TabListManager getTabListManager() {
         throw new RuntimeException("RUNTIME ERROR");
     }

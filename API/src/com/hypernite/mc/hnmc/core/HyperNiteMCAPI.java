@@ -53,13 +53,16 @@ public interface HyperNiteMCAPI {
     PlayerSkinManager getPlayerSkinManager();
 
     /**
-     *
      * @return SQL 管理器
      */
     SQLDataSource getSQLDataSource();
 
     /**
-     *
+     * @return Redis 管理器
+     */
+    RedisDataSource getRedisDataSource();
+
+    /**
      * @return TabList 管理
      */
     TabListManager getTabListManager();

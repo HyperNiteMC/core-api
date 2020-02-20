@@ -3,7 +3,7 @@
 
     <groupId>com.hypernite.mc</groupId>
     <artifactId>HyperNiteMC-Core</artifactId>
-    <version>7.5.3</version>
+    <version>7.5.4</version>
 
     <packaging>pom</packaging>
 
@@ -30,7 +30,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- 指定源代码和编译代码的java版本 -->
         <java.version>11</java.version>
-        <plugin-version>7.5.3</plugin-version>
+        <plugin-version>7.5.4</plugin-version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <module.api>${project.basedir}/API/src</module.api>
@@ -73,10 +73,6 @@
             <groupId>me.clip</groupId>
             <artifactId>placeholderapi</artifactId>
         </dependency>
-        <!--dependency>
-            <groupId>com.comphenix.packetwrapper</groupId>
-            <artifactId>PacketWrapper</artifactId>
-        </dependency-->
     </dependencies>
 
     <dependencyManagement>
@@ -185,7 +181,7 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-pool2</artifactId>
                 <version>2.6.2</version>
-                <scope>runtime</scope>
+                <scope>compile</scope>
                 <optional>true</optional>
             </dependency>
             <dependency>
