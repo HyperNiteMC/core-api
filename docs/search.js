@@ -133,7 +133,7 @@ $.widget("custom.catcomplete", $.ui.autocomplete, {
         if (item.category === catSearchTags) {
             if (item.d) {
                 div.html(label + "<span class=\"searchTagHolderResult\"> (" + item.h + ")</span><br><span class=\"searchTagDescResult\">"
-                    + item.d + "</span><br>");
+                                + item.d + "</span><br>");
             } else {
                 div.html(label + "<span class=\"searchTagHolderResult\"> (" + item.h + ")</span>");
             }
