@@ -61,16 +61,12 @@
             <artifactId>Paper</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.comphenix.protocol</groupId>
-            <artifactId>ProtocolLib-API</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
         </dependency>
         <dependency>
-            <groupId>me.clip</groupId>
-            <artifactId>placeholderapi</artifactId>
+            <groupId>com.comphenix.protocol</groupId>
+            <artifactId>ProtocolLib-API</artifactId>
         </dependency>
     </dependencies>
 
@@ -128,6 +124,7 @@
                 <groupId>com.comphenix.protocol</groupId>
                 <artifactId>ProtocolLib-API</artifactId>
                 <version>4.4.0</version>
+                <optional>true</optional>
                 <scope>system</scope>
                 <systemPath>P:/Java/Libraries/plugins/ProtocolLib.jar</systemPath>
                 <exclusions>
@@ -146,6 +143,7 @@
                 <artifactId>VaultAPI</artifactId>
                 <version>1.7</version>
                 <scope>provided</scope>
+                <optional>true</optional>
                 <exclusions>
                     <exclusion>
                         <artifactId>bukkit</artifactId>
