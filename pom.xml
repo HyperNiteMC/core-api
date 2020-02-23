@@ -37,11 +37,6 @@
     </properties>
 
     <repositories>
-        <!--ProtocolLib-->
-        <!--repository>
-            <id>dmulloy2-repo</id>
-            <url>http://repo.dmulloy2.net/nexus/repository/public/</url>
-        </repository-->
         <!--PlaceHolderAPI-->
         <repository>
             <id>placeholderapi</id>
@@ -52,32 +47,47 @@
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
+        <repository>
+            <id>xuan</id>
+            <url>http://xuan.nctu.me:8081/repository/Maven/</url>
+        </repository>
     </repositories>
 
 
     <dependencies>
         <dependency>
-            <groupId>com.ericlam.mc</groupId>
-            <artifactId>Paper</artifactId>
+            <groupId>patched</groupId>
+            <artifactId>1.15</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.comphenix.protocol</groupId>
-            <artifactId>ProtocolLib-API</artifactId>
+            <groupId>other</groupId>
+            <artifactId>protocollib-api</artifactId>
         </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.ericlam.mc</groupId>
-                <artifactId>Paper</artifactId>
-                <version>1.14.3</version>
-                <scope>system</scope>
-                <systemPath>P:/Java/Libraries/servers/Paper-1.15.jar</systemPath>
+                <groupId>paper</groupId>
+                <artifactId>1.15</artifactId>
+                <version>8</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>patched</groupId>
+                <artifactId>1.15</artifactId>
+                <version>R1</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.10.2</version>
+                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.dataformat</groupId>
@@ -92,17 +102,10 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>2.10.2</version>
-                <scope>compile</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.ericlam.mc</groupId>
-                <artifactId>AsyncCreateWorld</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-                <scope>system</scope>
-                <systemPath>P:/Java/Libraries/plugins/AsyncCreateWorld.jar</systemPath>
+                <groupId>other</groupId>
+                <artifactId>async-create-world</artifactId>
+                <version>0.0.1</version>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.module</groupId>
@@ -121,22 +124,11 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>com.comphenix.protocol</groupId>
-                <artifactId>ProtocolLib-API</artifactId>
+                <groupId>other</groupId>
+                <artifactId>protocollib-api</artifactId>
                 <version>4.4.0</version>
+                <scope>provided</scope>
                 <optional>true</optional>
-                <scope>system</scope>
-                <systemPath>P:/Java/Libraries/plugins/ProtocolLib.jar</systemPath>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>cglib-nodep</artifactId>
-                        <groupId>cglib</groupId>
-                    </exclusion>
-                    <exclusion>
-                        <artifactId>BukkitExecutors</artifactId>
-                        <groupId>com.comphenix.executors</groupId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>com.github.MilkBowl</groupId>
