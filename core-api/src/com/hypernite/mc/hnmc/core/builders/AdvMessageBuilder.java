@@ -1,61 +1,50 @@
 package com.hypernite.mc.hnmc.core.builders;
 
+import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
+import com.hypernite.mc.hnmc.core.managers.builder.AbstractAdvMessageBuilder;
+import com.hypernite.mc.hnmc.core.managers.builder.AbstractMessageBuilder;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.TextComponent;
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 /**
  * @see MessageBuilder
  */
-public class AdvMessageBuilder {
-    private TextComponent textComponent;
+public class AdvMessageBuilder implements AbstractAdvMessageBuilder {
 
-    public AdvMessageBuilder(String msg) {
-        String amsg = ChatColor.translateAlternateColorCodes('&', msg);
-        textComponent = new TextComponent(amsg);
+    private final AbstractAdvMessageBuilder delegate;
+
+    public AdvMessageBuilder(String... msg) {
+        this.delegate = HyperNiteMC.getAPI().getFactory().getBuilder().getAdvMessageBuilder(msg);
     }
 
-    public AdvMessageBuilder add(String... msg) {
-        for (String s : msg) {
-            String m = ChatColor.translateAlternateColorCodes('&', s);
-            textComponent.addExtra(m);
-        }
-        return this;
+    @Override
+    public AbstractAdvMessageBuilder add(String... msg) {
+        return delegate.add(msg);
     }
 
-    public AdvMessageBuilder add(BaseComponent baseComponent) {
-        textComponent.addExtra(baseComponent);
-        return this;
+    @Override
+    public AbstractAdvMessageBuilder add(BaseComponent... baseComponent) {
+        return delegate.add(baseComponent);
     }
 
-    public AdvMessageBuilder add(MessageBuilder builder) {
-        for (BaseComponent component : builder.build()) {
-            textComponent.addExtra(component);
-        }
-        return this;
+    @Override
+    public AbstractAdvMessageBuilder add(AbstractMessageBuilder... builders) {
+        return delegate.add(builders);
     }
 
-    public AdvMessageBuilder add(MessageBuilder... builder) {
-        for (MessageBuilder messageBuilder : builder) {
-            this.add(messageBuilder);
-            this.nextLine();
-        }
-        return this;
+    @Override
+    public AbstractAdvMessageBuilder nextLine() {
+        return delegate.nextLine();
     }
 
-    public AdvMessageBuilder nextLine() {
-        textComponent.addExtra("\n");
-        return this;
-    }
-
-    public TextComponent build() {
-        return textComponent;
-    }
-
+    @Override
     public void sendPlayer(Player player) {
-        player.sendMessage(textComponent);
+        delegate.sendPlayer(player);
     }
 
-
+    @Override
+    public TextComponent build() {
+        return delegate.build();
+    }
 }

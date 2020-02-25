@@ -2,8 +2,6 @@ package com.hypernite.mc.hnmc.core.main;
 
 import com.hypernite.mc.hnmc.core.HyperNiteMCAPI;
 import com.hypernite.mc.hnmc.core.factory.CoreFactory;
-import com.hypernite.mc.hnmc.core.listener.ChatRunnerManager;
-import com.hypernite.mc.hnmc.core.listener.ItemEventManager;
 import com.hypernite.mc.hnmc.core.managers.*;
 
 /**
@@ -22,11 +20,6 @@ public class HyperNiteMC implements HyperNiteMCAPI {
 
     @Override
     public ChatFormatManager getChatFormatManager() {
-        throw new RuntimeException("RUNTIME ERROR");
-    }
-
-    @Override
-    public ChatRunnerManager getChatRunnerManager() {
         throw new RuntimeException("RUNTIME ERROR");
     }
 
@@ -67,11 +60,6 @@ public class HyperNiteMC implements HyperNiteMCAPI {
 
     @Override
     public TabListManager getTabListManager() {
-        throw new RuntimeException("RUNTIME ERROR");
-    }
-
-    @Override
-    public ItemEventManager getItemEventManager() {
         throw new RuntimeException("RUNTIME ERROR");
     }
 
