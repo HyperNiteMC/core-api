@@ -318,7 +318,8 @@
                         <linksource>true</linksource>
                         <isOffline>false</isOffline>
                         <encoding>${project.build.sourceEncoding}</encoding>
-                        <windowtitle>Core-Api</windowtitle>
+                        <windowtitle>HyperNiteMC-Api</windowtitle>
+                        <doctitle>HyperNiteMC-Api v${project.version}</doctitle>
                         <verbose>true</verbose>
                         <author>true</author>
                         <version>true</version>
