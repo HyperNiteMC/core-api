@@ -13,6 +13,8 @@ public abstract class Configuration {
 
     /**
      * 保存文件
+     *
+     * @throws IOException 保存失敗
      */
     public void save() throws IOException {
         controller.save(this);
