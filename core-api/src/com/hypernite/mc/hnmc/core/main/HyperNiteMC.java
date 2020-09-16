@@ -29,7 +29,7 @@ public class HyperNiteMC implements HyperNiteMCAPI {
     }
 
     @Override
-    public CoreScheduler getCoreSchelder() {
+    public CoreScheduler getCoreScheduler() {
         throw new RuntimeException("RUNTIME ERROR");
     }
 
@@ -75,6 +75,11 @@ public class HyperNiteMC implements HyperNiteMCAPI {
 
     @Override
     public WorldManager getWorldManager() {
+        throw new RuntimeException("RUNTIME ERROR");
+    }
+
+    @Override
+    public EventCancelManager getEventCancelManager() {
         throw new RuntimeException("RUNTIME ERROR");
     }
 }

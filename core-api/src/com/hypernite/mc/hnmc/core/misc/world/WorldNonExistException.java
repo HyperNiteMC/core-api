@@ -1,7 +1,7 @@
 package com.hypernite.mc.hnmc.core.misc.world;
 
 public class WorldNonExistException extends Exception {
-    private String world;
+    private final String world;
 
     public WorldNonExistException(String world) {
         this.world = world;

@@ -26,7 +26,7 @@ public interface HyperNiteMCAPI {
     /**
      * @return api主導的排程器
      */
-    CoreScheduler getCoreSchelder();
+    CoreScheduler getCoreScheduler();
 
     /**
      * @return 註冊指令
@@ -72,5 +72,11 @@ public interface HyperNiteMCAPI {
      * @return 世界管理
      */
     WorldManager getWorldManager();
+
+    /**
+     * 主要用於 CancelEvent.yml 的事件取消處理。
+     * @return 事件取消管理器
+     */
+    EventCancelManager getEventCancelManager();
 
 }
