@@ -1,3 +1,5 @@
 /Plugin/src/com/hypernite/mc/hnmc/core/*
 /Plugin/resources/*
 /Plugin/pom.xml
+/.idea/*
+/out/*
