@@ -59,7 +59,7 @@
     <dependencies>
         <dependency>
             <groupId>patched</groupId>
-            <artifactId>1.15</artifactId>
+            <artifactId>1.16</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.MilkBowl</groupId>
@@ -82,13 +82,13 @@
         <dependencies>
             <dependency>
                 <groupId>paper</groupId>
-                <artifactId>1.15</artifactId>
-                <version>8</version>
+                <artifactId>1.16</artifactId>
+                <version>46</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>patched</groupId>
-                <artifactId>1.15</artifactId>
+                <artifactId>1.16</artifactId>
                 <version>R1</version>
                 <scope>provided</scope>
             </dependency>
@@ -223,6 +223,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>${parent.artifactId}-${project.version}</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
