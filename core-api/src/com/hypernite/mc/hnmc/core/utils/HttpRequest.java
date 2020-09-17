@@ -13,25 +13,29 @@ import java.util.concurrent.CompletionException;
  */
 public class HttpRequest {
 
-    public static CompletableFuture<String> get(String link) {
+    public static CompletableFuture<String> getFuture(String link) {
         return CompletableFuture.supplyAsync(() -> {
             try {
-                URL url = new URL(link);
-                HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                con.setRequestMethod("GET");
-                con.setRequestProperty("User-Agent", "Mozilla/5.0");
-                BufferedReader in = new BufferedReader(
-                        new InputStreamReader(con.getInputStream()));
-                String inputLine;
-                StringBuilder response = new StringBuilder();
-                while ((inputLine = in.readLine()) != null) {
-                    response.append(inputLine);
-                }
-                in.close();
-                return response.toString();
+               return get(link);
             } catch (IOException e) {
                 throw new CompletionException(e);
             }
         });
+    }
+
+    public static String get(String link) throws IOException{
+        URL url = new URL(link);
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        con.setRequestMethod("GET");
+        con.setRequestProperty("User-Agent", "Mozilla/5.0");
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(con.getInputStream()));
+        String inputLine;
+        StringBuilder response = new StringBuilder();
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
+        }
+        in.close();
+        return response.toString();
     }
 }

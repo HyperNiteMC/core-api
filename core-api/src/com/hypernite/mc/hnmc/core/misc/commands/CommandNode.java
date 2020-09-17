@@ -13,18 +13,18 @@ import java.util.List;
 
 public abstract class CommandNode {
 
-    private String description;
-    private String placeholder;
-    private String command;
+    private final String description;
+    private final String placeholder;
+    private final String command;
 
 
-    private ArrayList<CommandNode> subCommands = new ArrayList<>();
+    private final ArrayList<CommandNode> subCommands = new ArrayList<>();
 
 
-    private ArrayList<String> alias = new ArrayList<>();
+    private final ArrayList<String> alias = new ArrayList<>();
 
 
-    private String permission;
+    private final String permission;
 
 
     private CommandNode parent;
@@ -36,7 +36,7 @@ public abstract class CommandNode {
      * @param permission  權限
      * @param description 介紹
      * @param placeholder 佔位符
-     * @param alias 縮寫指令
+     * @param alias       縮寫指令
      */
     public CommandNode(CommandNode parent, @Nonnull String command, String permission, @Nonnull String description, String placeholder, String... alias) {
         this.command = command;
@@ -114,6 +114,11 @@ public abstract class CommandNode {
     public abstract List<String> executeTabCompletion(@Nonnull CommandSender sender, @Nonnull List<String> args);
 
     public boolean invokeCommand(@Nonnull CommandSender sender, @Nonnull List<String> args) throws CommandPermissionException, CommandArgumentException {
+
+        if (permission != null && !Perm.hasPermission(sender, permission)) {
+            throw new CommandPermissionException(permission);
+        }
+
         if (args.size() > 0) {
             for (CommandNode subCommand : subCommands) {
                 if (subCommand.match(args.get(0))) {
@@ -131,20 +136,19 @@ public abstract class CommandNode {
             }
         }
 
-        if (permission == null || Perm.hasPermission(sender, permission)) {
-            if (this.getPlaceholder() != null) {
-                String[] placeholders = Arrays.stream(this.getPlaceholder().split(" ")).filter(holder -> holder.startsWith("<") && holder.endsWith(">")).toArray(String[]::new);
-                if (args.size() < placeholders.length) {
-                    throw new CommandArgumentException(String.join(" ", placeholders));
-                }
+        if (this.getPlaceholder() != null) {
+            String[] placeholders = Arrays.stream(this.getPlaceholder().split(" ")).filter(holder -> holder.startsWith("<") && holder.endsWith(">")).toArray(String[]::new);
+            if (args.size() < placeholders.length) {
+                throw new CommandArgumentException(String.join(" ", placeholders));
             }
-            return executeCommand(sender, args);
-        } else {
-            throw new CommandPermissionException(permission);
         }
+        return executeCommand(sender, args);
     }
 
     public List<String> invokeTabCompletion(@Nonnull CommandSender sender, @Nonnull List<String> args) throws CommandPermissionException {
+        if (permission != null && !Perm.hasPermission(sender, permission)) {
+            throw new CommandPermissionException(permission);
+        }
 
         if (args.size() > 0) {
             for (CommandNode subCommand : subCommands) {
@@ -156,11 +160,8 @@ public abstract class CommandNode {
             }
         }
 
-        if (permission == null || Perm.hasPermission(sender, permission)) {
-            return executeTabCompletion(sender, args);
-        } else {
-            throw new CommandPermissionException(permission);
-        }
+
+        return executeTabCompletion(sender, args);
     }
 
     public boolean match(@Nonnull String args) {

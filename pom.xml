@@ -3,7 +3,7 @@
 
     <groupId>com.hypernite.mc</groupId>
     <artifactId>hypernitemc-core</artifactId>
-    <version>7.6.1</version>
+    <version>7.6.2</version>
 
     <packaging>pom</packaging>
 
@@ -117,9 +117,9 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>other</groupId>
+                <groupId>com.hypernite.mc</groupId>
                 <artifactId>async-create-world</artifactId>
-                <version>0.0.1</version>
+                <version>1.16.3</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -223,7 +223,6 @@
     </dependencyManagement>
 
     <build>
-        <finalName>${parent.artifactId}-${project.version}</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>

@@ -1,20 +1,19 @@
 package com.hypernite.mc.hnmc.core.managers;
 
+import com.hypernite.mc.hnmc.core.misc.world.WorldExistException;
+import com.hypernite.mc.hnmc.core.misc.world.WorldLoadedException;
 import com.hypernite.mc.hnmc.core.misc.world.WorldNonExistException;
 import com.hypernite.mc.hnmc.core.misc.world.WorldProperties;
 import org.bukkit.GameRule;
-import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.WorldType;
-import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.generator.ChunkGenerator;
 
 import javax.annotation.Nonnull;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
 
 /**
  * 用於取代 Multiverse-Core
@@ -23,23 +22,14 @@ public interface WorldManager {
 
     /**
      * @param name Bukkit世界
-     * @return 世界設定
+     * @return 世界設定 (唯獨版本, 欲更新請使用 {@link WorldManager#updateWorldProperties(String, Consumer)})
      * @throws WorldNonExistException 世界不存在
      */
-    WorldProperties getWorldProperties(String name) throws WorldNonExistException;
+    WorldProperties getWorldProperties(@Nonnull String name) throws WorldNonExistException;
 
-    /**
-     * @param world Bukkit世界
-     * @return 世界設定
-     */
-    WorldProperties getWorldProperties(World world);
 
-    /**
-     * @param name 世界名稱
-     * @return yaml 資料
-     * @throws WorldNonExistException 找不到世界
-     */
-    FileConfiguration getWorldFile(String name) throws WorldNonExistException;
+    boolean updateWorldProperties(@Nonnull String name, Consumer<WorldProperties> editor) throws WorldNonExistException;
+
 
     /**
      * @param world       世界
@@ -47,7 +37,7 @@ public interface WorldManager {
      * @param environment 環境
      * @return 加載是否成功
      */
-    CompletableFuture<Boolean> futureCreateWorld(@Nonnull String world, WorldType type, World.Environment environment);
+    CompletableFuture<Boolean> createWorld(@Nonnull String world, WorldType type, World.Environment environment) throws WorldExistException;
 
     /**
      * @param world              世界
@@ -56,7 +46,7 @@ public interface WorldManager {
      * @param generateStructures 生成建築
      * @return 加載是否成功
      */
-    CompletableFuture<Boolean> futureCreateWorld(@Nonnull String world, WorldType type, World.Environment environment, boolean generateStructures);
+    CompletableFuture<Boolean> createWorld(@Nonnull String world, WorldType type, World.Environment environment, boolean generateStructures) throws WorldExistException;
 
     /**
      * @param world              世界
@@ -67,20 +57,42 @@ public interface WorldManager {
      * @param seed               種子碼
      * @return 加載是否成功
      */
-    CompletableFuture<Boolean> futureCreateWorld(@Nonnull String world, World.Environment environment, ChunkGenerator generator, boolean generateStructures, WorldType type, long seed);
+    CompletableFuture<Boolean> createWorld(@Nonnull String world, World.Environment environment, ChunkGenerator generator, boolean generateStructures, WorldType type, long seed) throws WorldExistException;
+
+    /**
+     * @param world 世界名稱
+     * @return 是否成功
+     * @throws WorldNonExistException 世界不存在
+     */
+    boolean deleteWorld(String world) throws WorldNonExistException;
 
     /**
      * @param world 世界名稱
      * @return 加載是否成功
-     */
-    CompletableFuture<Boolean> futureLoadWorld(@Nonnull String world);
-
-    /**
-     * @param world  世界
-     * @param sender 指令發送者
      * @throws WorldNonExistException 世界不存在
      */
-    void loadWorld(@Nonnull String world, CommandSender sender) throws WorldNonExistException;
+    CompletableFuture<Boolean> loadWorld(@Nonnull String world) throws WorldNonExistException, WorldLoadedException;
+
+    /**
+     * @param world 世界名稱
+     * @return 是否成功
+     * @throws WorldNonExistException 世界不存在
+     */
+    boolean unloadWorld(@Nonnull String world) throws WorldNonExistException;
+
+    /**
+     * @param world 世界名稱
+     * @return 是否成功
+     * @throws WorldNonExistException 世界不存在
+     */
+    boolean disableWorld(@Nonnull String world) throws WorldNonExistException;
+
+    /**
+     * @param world  實際
+     * @throws WorldNonExistException 世界不存在
+     * @return 加載是否成功
+     */
+    CompletableFuture<Boolean> enableWorld(@Nonnull String world) throws WorldNonExistException, WorldLoadedException;
 
     /**
      * 保存所有世界設定
@@ -88,60 +100,21 @@ public interface WorldManager {
     void saveAll();
 
     /**
-     * @param world 世界名稱
-     * @return 是否成功
-     */
-    boolean unloadWorld(@Nonnull String world);
-
-    /**
-     * @param world 世界名稱
-     * @return 是否成功
-     * @throws WorldNonExistException 世界不存在
-     */
-    CompletableFuture<Boolean> deleteWorld(String world) throws WorldNonExistException;
-
-    /**
-     * @param world 世界名稱
-     * @return 出生點
-     */
-    Optional<Location> getWorldSpawn(String world);
-
-    /**
-     * @param world 世界名稱
-     * @return 是否成功
-     * @throws WorldNonExistException 世界不存在
-     */
-    boolean disableWorld(String world) throws WorldNonExistException;
-
-    /**
-     * @param world 世界
-     * @return 是否被禁用
-     */
-    boolean isNotAutoLoad(String world);
-
-    /**
-     * @param world  實際
-     * @param sender 指令發送者
-     * @throws WorldNonExistException 世界不存在
-     */
-    void enableWorld(String world, CommandSender sender) throws WorldNonExistException;
-
-    /**
      * @return 帶有前綴和顏色辨別的世界列表
      */
-    String[] listWorlds();
+    String[] listWorldMessages();
 
     /**
-     * @return 純世界列表
+     * @return 純世界列表 和 啟用狀態。
      */
-    List<String> listRealWorlds();
+    Map<String, Boolean> getWorldList();
 
     /**
      * @param world 世界名稱
      * @param name  Chunk 生成器 Id
      * @return Chunk 生成器
      */
-    Optional<ChunkGenerator> getChunkGenerator(String world, String name);
+    Optional<ChunkGenerator> getChunkGenerator(@Nonnull String world, String name);
 
     /**
      * @param rules 遊戲規則

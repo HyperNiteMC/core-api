@@ -6,21 +6,24 @@ import org.bukkit.inventory.ItemStack;
 
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
 
 public interface PlayerSkinManager {
 
     /**
+     * 生成頭顱
      * @param uuid 玩家UUID
-     * @return 有皮膚頭顱
+     * @param callback 生成頭顱後的處理
      */
-    ItemStack getSkull(UUID uuid);
+    void generateSkull(UUID uuid, Consumer<ItemStack> callback);
 
     /**
+     * 生成頭顱
      * @param uuid 玩家UUID
      * @param name 玩家名稱
-     * @return 有皮膚的頭顱
+     * @param callback 生成頭顱後的處理
      */
-    ItemStack getSkull(UUID uuid, String name);
+    void generateSkull(UUID uuid, String name, Consumer<ItemStack> callback);
 
     /**
      * @param b64  base64 Texture value
@@ -29,17 +32,20 @@ public interface PlayerSkinManager {
     void setSkullMeta(String b64, ItemStack head);
 
     /**
+     * 設置皮膚
      * @param uuid 玩家UUID
-     * @param head 頭顱
+     * @param head 玩家名稱
+     * @param callback 設置皮膚後的頭顱
      */
-    void setSkullMeta(UUID uuid, ItemStack head);
+    void setSkullMeta(UUID uuid, ItemStack head, Consumer<ItemStack> callback);
 
     /**
      * @param uuid 玩家UUID
      * @param name 玩家名稱
      * @param head 頭顱
+     * @param callback 設置皮膚後的頭顱
      */
-    void setSkullMeta(UUID uuid, String name, ItemStack head);
+    void setSkullMeta(UUID uuid, String name, ItemStack head, Consumer<ItemStack> callback);
 
     /**
      * @param uuid  玩家UUID

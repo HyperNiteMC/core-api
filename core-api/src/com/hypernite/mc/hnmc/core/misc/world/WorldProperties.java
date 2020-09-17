@@ -3,6 +3,16 @@ package com.hypernite.mc.hnmc.core.misc.world;
 import org.bukkit.Location;
 
 public class WorldProperties {
+
+    private WorldProperties(WorldProperties properties) {
+        this(properties.pvp, properties.pve, properties.getSpawn(), properties.vulnerable, properties.autoLoad);
+    }
+
+    public static WorldProperties copyOf(WorldProperties properties) {
+        return new WorldProperties(properties);
+    }
+
+
     private boolean pvp;
     private boolean pve;
     private Location spawn;
@@ -16,6 +26,7 @@ public class WorldProperties {
         this.vulnerable = vulnerable;
         this.autoLoad = autoLoad;
     }
+
 
     public WorldProperties(Location spawn) {
         this.spawn = spawn;

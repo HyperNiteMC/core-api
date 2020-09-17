@@ -131,10 +131,15 @@
 <span class="sourceLineNo">122</span><a id="line.122">    }</a>
 <span class="sourceLineNo">123</span><a id="line.123"></a>
 <span class="sourceLineNo">124</span><a id="line.124">    @Override</a>
-<span class="sourceLineNo">125</span><a id="line.125">    public ItemStack build() {</a>
-<span class="sourceLineNo">126</span><a id="line.126">        return delegate.build();</a>
+<span class="sourceLineNo">125</span><a id="line.125">    public void buildWithSkin(Consumer&lt;ItemStack&gt; callback) {</a>
+<span class="sourceLineNo">126</span><a id="line.126">        delegate.buildWithSkin(callback);</a>
 <span class="sourceLineNo">127</span><a id="line.127">    }</a>
-<span class="sourceLineNo">128</span><a id="line.128">}</a>
+<span class="sourceLineNo">128</span><a id="line.128"></a>
+<span class="sourceLineNo">129</span><a id="line.129">    @Override</a>
+<span class="sourceLineNo">130</span><a id="line.130">    public ItemStack build() {</a>
+<span class="sourceLineNo">131</span><a id="line.131">        return delegate.build();</a>
+<span class="sourceLineNo">132</span><a id="line.132">    }</a>
+<span class="sourceLineNo">133</span><a id="line.133">}</a>
 
 
 

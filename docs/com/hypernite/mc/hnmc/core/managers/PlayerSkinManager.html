@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre>public interface <a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.10">PlayerSkinManager</a></pre>
+<pre>public interface <a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.11">PlayerSkinManager</a></pre>
 </li>
 </ul>
 </div>
@@ -146,15 +146,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSkull(java.util.UUID)">getSkull</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSkull(java.util.UUID,java.lang.String,java.util.function.Consumer)">generateSkull</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&gt;&nbsp;callback)</code></th>
+<td class="colLast">
+<div class="block">生成頭顱</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSkull(java.util.UUID,java.lang.String)">getSkull</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
-        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSkull(java.util.UUID,java.util.function.Consumer)">generateSkull</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&gt;&nbsp;callback)</code></th>
+<td class="colLast">
+<div class="block">生成頭顱</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
@@ -194,16 +200,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSkullMeta(java.util.UUID,java.lang.String,org.bukkit.inventory.ItemStack)">setSkullMeta</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSkullMeta(java.util.UUID,java.lang.String,org.bukkit.inventory.ItemStack,java.util.function.Consumer)">setSkullMeta</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-            <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head)</code></th>
+            <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head,
+            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSkullMeta(java.util.UUID,org.bukkit.inventory.ItemStack)">setSkullMeta</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
-            <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head)</code></th>
-<td class="colLast">&nbsp;</td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSkullMeta(java.util.UUID,org.bukkit.inventory.ItemStack,java.util.function.Consumer)">setSkullMeta</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+            <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head,
+            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&gt;&nbsp;callback)</code></th>
+<td class="colLast">
+<div class="block">設置皮膚</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -241,35 +251,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getSkull(java.util.UUID)">
+<a id="generateSkull(java.util.UUID,java.util.function.Consumer)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getSkull</h4>
-<pre class="methodSignature"><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.16">getSkull</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid)</pre>
+<h4>generateSkull</h4>
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.18">generateSkull</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&gt;&nbsp;callback)</pre>
+<div class="block">生成頭顱</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uuid</code> - 玩家UUID</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>有皮膚頭顱</dd>
+<dd><code>callback</code> - 生成頭顱後的處理</dd>
 </dl>
 </li>
 </ul>
-<a id="getSkull(java.util.UUID,java.lang.String)">
+<a id="generateSkull(java.util.UUID,java.lang.String,java.util.function.Consumer)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getSkull</h4>
-<pre class="methodSignature"><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.23">getSkull</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
-                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<h4>generateSkull</h4>
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.26">generateSkull</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&gt;&nbsp;callback)</pre>
+<div class="block">生成頭顱</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uuid</code> - 玩家UUID</dd>
 <dd><code>name</code> - 玩家名稱</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>有皮膚的頭顱</dd>
+<dd><code>callback</code> - 生成頭顱後的處理</dd>
 </dl>
 </li>
 </ul>
@@ -279,7 +291,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setSkullMeta</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.29">setSkullMeta</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;b64,
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.32">setSkullMeta</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;b64,
                   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -288,35 +300,40 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="setSkullMeta(java.util.UUID,org.bukkit.inventory.ItemStack)">
+<a id="setSkullMeta(java.util.UUID,org.bukkit.inventory.ItemStack,java.util.function.Consumer)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSkullMeta</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.35">setSkullMeta</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
-                  <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head)</pre>
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.40">setSkullMeta</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+                  <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head,
+                  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&gt;&nbsp;callback)</pre>
+<div class="block">設置皮膚</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uuid</code> - 玩家UUID</dd>
-<dd><code>head</code> - 頭顱</dd>
+<dd><code>head</code> - 玩家名稱</dd>
+<dd><code>callback</code> - 設置皮膚後的頭顱</dd>
 </dl>
 </li>
 </ul>
-<a id="setSkullMeta(java.util.UUID,java.lang.String,org.bukkit.inventory.ItemStack)">
+<a id="setSkullMeta(java.util.UUID,java.lang.String,org.bukkit.inventory.ItemStack,java.util.function.Consumer)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSkullMeta</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.42">setSkullMeta</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.48">setSkullMeta</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-                  <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head)</pre>
+                  <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&nbsp;head,
+                  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html?is-external=true" title="class or interface in org.bukkit.inventory" class="externalLink">ItemStack</a>&gt;&nbsp;callback)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uuid</code> - 玩家UUID</dd>
 <dd><code>name</code> - 玩家名稱</dd>
 <dd><code>head</code> - 頭顱</dd>
+<dd><code>callback</code> - 設置皮膚後的頭顱</dd>
 </dl>
 </li>
 </ul>
@@ -326,7 +343,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setHeadBlock</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.50">setHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.56">setHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
                   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html?is-external=true" title="class or interface in org.bukkit.block" class="externalLink">Block</a>&nbsp;block,
                   boolean&nbsp;wall,
                   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html?is-external=true" title="class or interface in org.bukkit.block" class="externalLink">BlockFace</a>&nbsp;face)</pre>
@@ -345,7 +362,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setHeadBlock</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.59">setHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.65">setHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;player,
                   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html?is-external=true" title="class or interface in org.bukkit.block" class="externalLink">Block</a>&nbsp;block,
                   boolean&nbsp;wall,
@@ -366,7 +383,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setHeadBlock</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.67">setHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;b64Value,
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.73">setHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;b64Value,
                   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html?is-external=true" title="class or interface in org.bukkit.block" class="externalLink">Block</a>&nbsp;block,
                   boolean&nbsp;wall,
                   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html?is-external=true" title="class or interface in org.bukkit.block" class="externalLink">BlockFace</a>&nbsp;face)</pre>
@@ -385,7 +402,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>updateHeadBlock</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.74">updateHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.80">updateHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
                      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;player,
                      <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html?is-external=true" title="class or interface in org.bukkit.block" class="externalLink">Block</a>&nbsp;block)</pre>
 <dl>
@@ -402,7 +419,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>updateHeadBlock</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.80">updateHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.86">updateHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid,
                      <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html?is-external=true" title="class or interface in org.bukkit.block" class="externalLink">Block</a>&nbsp;block)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -417,7 +434,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>updateHeadBlock</h4>
-<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.86">updateHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newB64Value,
+<pre class="methodSignature">void&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.92">updateHeadBlock</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newB64Value,
                      <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html?is-external=true" title="class or interface in org.bukkit.block" class="externalLink">Block</a>&nbsp;block)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -432,7 +449,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getTextureValue</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.92">getTextureValue</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid)</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/managers/PlayerSkinManager.html#line.98">getTextureValue</a>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a>&nbsp;uuid)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uuid</code> - 玩家UUID</dd>

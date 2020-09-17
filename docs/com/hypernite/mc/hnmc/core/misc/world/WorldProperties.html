@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -177,58 +177,63 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="WorldProperties.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldProperties</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyOf(com.hypernite.mc.hnmc.core.misc.world.WorldProperties)">copyOf</a></span>&#8203;(<a href="WorldProperties.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldProperties</a>&nbsp;properties)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpawn()">getSpawn</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAutoLoad()">isAutoLoad</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPve()">isPve</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPvp()">isPvp</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isVulnerable()">isVulnerable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAutoLoad(boolean)">setAutoLoad</a></span>&#8203;(boolean&nbsp;autoLoad)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPve(boolean)">setPve</a></span>&#8203;(boolean&nbsp;pve)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPvp(boolean)">setPvp</a></span>&#8203;(boolean&nbsp;pvp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSpawn(org.bukkit.Location)">setSpawn</a></span>&#8203;(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a>&nbsp;spawn)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVulnerable(boolean)">setVulnerable</a></span>&#8203;(boolean&nbsp;vulnerable)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -263,7 +268,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>WorldProperties</h4>
-<pre>public&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.12">WorldProperties</a>&#8203;(boolean&nbsp;pvp,
+<pre>public&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.22">WorldProperties</a>&#8203;(boolean&nbsp;pvp,
                        boolean&nbsp;pve,
                        <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a>&nbsp;spawn,
                        boolean&nbsp;vulnerable,
@@ -276,7 +281,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WorldProperties</h4>
-<pre>public&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.20">WorldProperties</a>&#8203;(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a>&nbsp;spawn)</pre>
+<pre>public&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.31">WorldProperties</a>&#8203;(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a>&nbsp;spawn)</pre>
 </li>
 </ul>
 </li>
@@ -289,13 +294,22 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="copyOf(com.hypernite.mc.hnmc.core.misc.world.WorldProperties)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>copyOf</h4>
+<pre class="methodSignature">public static&nbsp;<a href="WorldProperties.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldProperties</a>&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.11">copyOf</a>&#8203;(<a href="WorldProperties.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldProperties</a>&nbsp;properties)</pre>
+</li>
+</ul>
 <a id="isPvp()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isPvp</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.24">isPvp</a>()</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.35">isPvp</a>()</pre>
 </li>
 </ul>
 <a id="setPvp(boolean)">
@@ -304,7 +318,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>setPvp</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.28">setPvp</a>&#8203;(boolean&nbsp;pvp)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.39">setPvp</a>&#8203;(boolean&nbsp;pvp)</pre>
 </li>
 </ul>
 <a id="isPve()">
@@ -313,7 +327,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>isPve</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.32">isPve</a>()</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.43">isPve</a>()</pre>
 </li>
 </ul>
 <a id="setPve(boolean)">
@@ -322,7 +336,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>setPve</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.36">setPve</a>&#8203;(boolean&nbsp;pve)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.47">setPve</a>&#8203;(boolean&nbsp;pve)</pre>
 </li>
 </ul>
 <a id="getSpawn()">
@@ -331,7 +345,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>getSpawn</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a>&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.40">getSpawn</a>()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a>&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.51">getSpawn</a>()</pre>
 </li>
 </ul>
 <a id="setSpawn(org.bukkit.Location)">
@@ -340,7 +354,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpawn</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.44">setSpawn</a>&#8203;(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a>&nbsp;spawn)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.55">setSpawn</a>&#8203;(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html?is-external=true" title="class or interface in org.bukkit" class="externalLink">Location</a>&nbsp;spawn)</pre>
 </li>
 </ul>
 <a id="isVulnerable()">
@@ -349,7 +363,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>isVulnerable</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.48">isVulnerable</a>()</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.59">isVulnerable</a>()</pre>
 </li>
 </ul>
 <a id="setVulnerable(boolean)">
@@ -358,7 +372,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>setVulnerable</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.52">setVulnerable</a>&#8203;(boolean&nbsp;vulnerable)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.63">setVulnerable</a>&#8203;(boolean&nbsp;vulnerable)</pre>
 </li>
 </ul>
 <a id="isAutoLoad()">
@@ -367,7 +381,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockList">
 <li class="blockList">
 <h4>isAutoLoad</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.56">isAutoLoad</a>()</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.67">isAutoLoad</a>()</pre>
 </li>
 </ul>
 <a id="setAutoLoad(boolean)">
@@ -376,7 +390,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setAutoLoad</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.60">setAutoLoad</a>&#8203;(boolean&nbsp;autoLoad)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;<a href="../../../../../../../src-html/com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html#line.71">setAutoLoad</a>&#8203;(boolean&nbsp;autoLoad)</pre>
 </li>
 </ul>
 </li>

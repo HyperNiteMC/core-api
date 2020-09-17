@@ -122,6 +122,11 @@ public class ItemStackBuilder implements AbstractItemStackBuilder {
     }
 
     @Override
+    public void buildWithSkin(Consumer<ItemStack> callback) {
+        delegate.buildWithSkin(callback);
+    }
+
+    @Override
     public ItemStack build() {
         return delegate.build();
     }

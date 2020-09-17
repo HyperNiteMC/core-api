@@ -118,4 +118,10 @@ public interface AbstractItemStackBuilder extends Buildable<ItemStack> {
      */
     AbstractItemStackBuilder itemFlags(ItemFlag... itemFlags);
 
+    /**
+     * 獲取頭顱皮膚
+     * @param callback 設置好皮膚後的頭顱物品
+     */
+    void buildWithSkin(Consumer<ItemStack> callback);
+
 }
