@@ -75,6 +75,7 @@ public interface HyperNiteMCAPI {
 
     /**
      * 主要用於 CancelEvent.yml 的事件取消處理。
+     *
      * @return 事件取消管理器
      */
     EventCancelManager getEventCancelManager();

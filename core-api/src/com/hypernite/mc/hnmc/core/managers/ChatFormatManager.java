@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 public interface ChatFormatManager {
 
     /**
-     * @param player  玩家
+     * @param player 玩家
      * @return 帶有訊息的聊天格式, 沒有時返回空白
      */
     String getChatFormat(Player player);

@@ -16,7 +16,6 @@ public interface YamlManager {
 
 
     /**
-     *
      * @param yml 文件名稱
      * @param <T> 映射接口
      * @return 映射物件
@@ -24,9 +23,8 @@ public interface YamlManager {
     <T extends Configuration> T getConfig(String yml);
 
     /**
-     *
      * @param config 映射物件類
-     * @param <T> 映射接口
+     * @param <T>    映射接口
      * @return 映射物件
      */
     <T extends Configuration> T getConfigAs(Class<T> config);

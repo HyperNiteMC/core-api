@@ -98,7 +98,7 @@ public class CommandNodeBuilder {
 
     /**
      * @return 指令節點
-     * @throws NotExecutableException     指令無法執行
+     * @throws NotExecutableException 指令無法執行
      */
     public CommandNode build() {
         if (cmdExecutorSender == null) throw new NotExecutableException(command);

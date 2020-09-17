@@ -72,7 +72,7 @@ public class DefaultCommandBuilder {
      * @return 返回分支指令的幫助訊息的指令
      */
     public DefaultCommand build() {
-        DefaultCommand defaultCommand = new DefaultCommand(parent, command, permission, description,alias);
+        DefaultCommand defaultCommand = new DefaultCommand(parent, command, permission, description, alias);
         for (CommandNode node : children) {
             node.setParent(defaultCommand);
             defaultCommand.addSub(node);

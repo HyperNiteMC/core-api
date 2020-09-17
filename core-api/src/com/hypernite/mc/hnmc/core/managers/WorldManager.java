@@ -88,9 +88,9 @@ public interface WorldManager {
     boolean disableWorld(@Nonnull String world) throws WorldNonExistException;
 
     /**
-     * @param world  實際
-     * @throws WorldNonExistException 世界不存在
+     * @param world 實際
      * @return 加載是否成功
+     * @throws WorldNonExistException 世界不存在
      */
     CompletableFuture<Boolean> enableWorld(@Nonnull String world) throws WorldNonExistException, WorldLoadedException;
 

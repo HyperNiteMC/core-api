@@ -12,15 +12,17 @@ public interface PlayerSkinManager {
 
     /**
      * 生成頭顱
-     * @param uuid 玩家UUID
+     *
+     * @param uuid     玩家UUID
      * @param callback 生成頭顱後的處理
      */
     void generateSkull(UUID uuid, Consumer<ItemStack> callback);
 
     /**
      * 生成頭顱
-     * @param uuid 玩家UUID
-     * @param name 玩家名稱
+     *
+     * @param uuid     玩家UUID
+     * @param name     玩家名稱
      * @param callback 生成頭顱後的處理
      */
     void generateSkull(UUID uuid, String name, Consumer<ItemStack> callback);
@@ -33,16 +35,17 @@ public interface PlayerSkinManager {
 
     /**
      * 設置皮膚
-     * @param uuid 玩家UUID
-     * @param head 玩家名稱
+     *
+     * @param uuid     玩家UUID
+     * @param head     玩家名稱
      * @param callback 設置皮膚後的頭顱
      */
     void setSkullMeta(UUID uuid, ItemStack head, Consumer<ItemStack> callback);
 
     /**
-     * @param uuid 玩家UUID
-     * @param name 玩家名稱
-     * @param head 頭顱
+     * @param uuid     玩家UUID
+     * @param name     玩家名稱
+     * @param head     頭顱
      * @param callback 設置皮膚後的頭顱
      */
     void setSkullMeta(UUID uuid, String name, ItemStack head, Consumer<ItemStack> callback);

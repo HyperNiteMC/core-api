@@ -16,14 +16,14 @@ public class HttpRequest {
     public static CompletableFuture<String> getFuture(String link) {
         return CompletableFuture.supplyAsync(() -> {
             try {
-               return get(link);
+                return get(link);
             } catch (IOException e) {
                 throw new CompletionException(e);
             }
         });
     }
 
-    public static String get(String link) throws IOException{
+    public static String get(String link) throws IOException {
         URL url = new URL(link);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
