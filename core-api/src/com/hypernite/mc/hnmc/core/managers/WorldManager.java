@@ -28,6 +28,13 @@ public interface WorldManager {
     WorldProperties getWorldProperties(@Nonnull String name) throws WorldNonExistException;
 
 
+    /**
+     * 更新世界設定
+     * @param name Bukkit世界
+     * @param editor 更新操作
+     * @return 更新是否成功
+     * @throws WorldNonExistException 世界不存在
+     */
     boolean updateWorldProperties(@Nonnull String name, Consumer<WorldProperties> editor) throws WorldNonExistException;
 
 
@@ -35,18 +42,18 @@ public interface WorldManager {
      * @param world       世界
      * @param type        類型
      * @param environment 環境
-     * @return 加載是否成功
+     * @return 加載後的世界, 失敗為 null
      */
-    CompletableFuture<Boolean> createWorld(@Nonnull String world, WorldType type, World.Environment environment) throws WorldExistException;
+    CompletableFuture<World> createWorld(@Nonnull String world, WorldType type, World.Environment environment) throws WorldExistException;
 
     /**
      * @param world              世界
      * @param type               類型
      * @param environment        環境
      * @param generateStructures 生成建築
-     * @return 加載是否成功
+     * @return 加載後的世界, 失敗為 null
      */
-    CompletableFuture<Boolean> createWorld(@Nonnull String world, WorldType type, World.Environment environment, boolean generateStructures) throws WorldExistException;
+    CompletableFuture<World> createWorld(@Nonnull String world, WorldType type, World.Environment environment, boolean generateStructures) throws WorldExistException;
 
     /**
      * @param world              世界
@@ -55,9 +62,9 @@ public interface WorldManager {
      * @param generateStructures 生成建築
      * @param type               地形
      * @param seed               種子碼
-     * @return 加載是否成功
+     * @return 加載後的世界, 失敗為 null
      */
-    CompletableFuture<Boolean> createWorld(@Nonnull String world, World.Environment environment, ChunkGenerator generator, boolean generateStructures, WorldType type, long seed) throws WorldExistException;
+    CompletableFuture<World> createWorld(@Nonnull String world, World.Environment environment, ChunkGenerator generator, boolean generateStructures, WorldType type, long seed) throws WorldExistException;
 
     /**
      * @param world 世界名稱
@@ -68,10 +75,10 @@ public interface WorldManager {
 
     /**
      * @param world 世界名稱
-     * @return 加載是否成功
+     * @return 加載後的世界, 失敗為 null
      * @throws WorldNonExistException 世界不存在
      */
-    CompletableFuture<Boolean> loadWorld(@Nonnull String world) throws WorldNonExistException, WorldLoadedException;
+    CompletableFuture<World> loadWorld(@Nonnull String world) throws WorldNonExistException, WorldLoadedException;
 
     /**
      * @param world 世界名稱
