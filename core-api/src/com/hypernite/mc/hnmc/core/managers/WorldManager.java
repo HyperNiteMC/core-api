@@ -47,6 +47,13 @@ public interface WorldManager {
     CompletableFuture<World> createWorld(@Nonnull String world, WorldType type, World.Environment environment) throws WorldExistException;
 
     /**
+     * 創建虛空世界
+     * @param world       世界
+     * @return 加載後的世界, 失敗為 null
+     */
+    CompletableFuture<World> createVoidWorld(@Nonnull String world) throws WorldExistException;
+
+    /**
      * @param world              世界
      * @param type               類型
      * @param environment        環境
