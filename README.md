@@ -2,4 +2,4 @@
 
 [Javadocs](https://eric2788.github.com/core-api)
 
-[Wiki](./wiki)
+[Wiki](https://github.com/eric2788/core-api/wiki)
