@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":1,"i2":1,"i3":1,"i4":1,"i5":2,"i6":2,"i7":1,"i8":1,"i9":1,"i10":2,"i11":1,"i12":1,"i13":8,"i14":2,"i15":2,"i16":8,"i17":1,"i18":1,"i19":2,"i20":1,"i21":1,"i22":1,"i23":2,"i24":2,"i25":1,"i26":1,"i27":1,"i28":2,"i29":2,"i30":1,"i31":2,"i32":2,"i33":2,"i34":2,"i35":2,"i36":2,"i37":1,"i38":1,"i39":1,"i40":8,"i41":2,"i42":1,"i43":32,"i44":1,"i45":1,"i46":2,"i47":32,"i48":1,"i49":1,"i50":2,"i51":2,"i52":1,"i53":8,"i54":8,"i55":8,"i56":1,"i57":8,"i58":2,"i59":1};
-var tabs = {65535:["t0","All Classes"],1:["t1","Interface Summary"],2:["t2","Class Summary"],8:["t4","Exception Summary"],32:["t6","Annotation Types Summary"]};
+var data = {"i0":1,"i1":1,"i2":1,"i3":1,"i4":1,"i5":2,"i6":2,"i7":1,"i8":1,"i9":1,"i10":2,"i11":1,"i12":1,"i13":8,"i14":2,"i15":2,"i16":8,"i17":1,"i18":1,"i19":2,"i20":1,"i21":1,"i22":1,"i23":2,"i24":2,"i25":1,"i26":1,"i27":1,"i28":2,"i29":2,"i30":1,"i31":2,"i32":2,"i33":2,"i34":2,"i35":2,"i36":2,"i37":1,"i38":1,"i39":1,"i40":8,"i41":2,"i42":1,"i43":8,"i44":32,"i45":1,"i46":1,"i47":2,"i48":32,"i49":1,"i50":4,"i51":8,"i52":1,"i53":1,"i54":2,"i55":2,"i56":1,"i57":8,"i58":8,"i59":8,"i60":1,"i61":8,"i62":2,"i63":1};
+var tabs = {65535:["t0","All Classes"],1:["t1","Interface Summary"],2:["t2","Class Summary"],4:["t3","Enum Summary"],8:["t4","Exception Summary"],32:["t6","Annotation Types Summary"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -106,7 +106,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <table class="typeSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Classes</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Interface Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Class Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Exception Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Annotation Types Summary</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Classes</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Interface Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Class Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Enum Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Exception Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Annotation Types Summary</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Class</th>
 <th class="colLast" scope="col">Description</th>
@@ -168,7 +168,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/misc/commands/exception/CommandArgumentException.html" title="class in com.hypernite.mc.hnmc.core.misc.commands.exception">CommandArgumentException</a></td>
+<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/exception/CommandArgumentException.html" title="class in com.hypernite.mc.hnmc.core.exception">CommandArgumentException</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
 <tr id="i14" class="altColor">
@@ -182,7 +182,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </th>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/misc/commands/exception/CommandPermissionException.html" title="class in com.hypernite.mc.hnmc.core.misc.commands.exception">CommandPermissionException</a></td>
+<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/exception/CommandPermissionException.html" title="class in com.hypernite.mc.hnmc.core.exception">CommandPermissionException</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
 <tr id="i17" class="rowColor">
@@ -304,7 +304,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
 <tr id="i40" class="altColor">
-<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/misc/commands/exception/NotExecutableException.html" title="class in com.hypernite.mc.hnmc.core.misc.commands.exception">NotExecutableException</a></td>
+<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/exception/NotExecutableException.html" title="class in com.hypernite.mc.hnmc.core.exception">NotExecutableException</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
 <tr id="i41" class="rowColor">
@@ -318,82 +318,102 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
 <tr id="i43" class="rowColor">
+<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/exception/PluginNotFoundException.html" title="class in com.hypernite.mc.hnmc.core.exception">PluginNotFoundException</a></td>
+<th class="colLast" scope="row">&nbsp;</th>
+</tr>
+<tr id="i44" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/config/yaml/Prefix.html" title="annotation in com.hypernite.mc.hnmc.core.config.yaml">Prefix</a></td>
 <th class="colLast" scope="row">
 <div class="block">用於 訊息類別 config 時標註 前綴 路徑</div>
 </th>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/managers/RedisDataSource.html" title="interface in com.hypernite.mc.hnmc.core.managers">RedisDataSource</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/factory/ReflectionFactory.html" title="interface in com.hypernite.mc.hnmc.core.factory">ReflectionFactory</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/utils/ReflectionUtil.html" title="class in com.hypernite.mc.hnmc.core.utils">ReflectionUtil</a></td>
 <th class="colLast" scope="row">
 <div class="block">Java Reflection Tools</div>
 </th>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/config/yaml/Resource.html" title="annotation in com.hypernite.mc.hnmc.core.config.yaml">Resource</a></td>
 <th class="colLast" scope="row">
 <div class="block">用於創建 config class 時 定位 jar 內 yml 位置</div>
 </th>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i49" class="rowColor">
+<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/managers/ResourceManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">ResourceManager</a></td>
+<th class="colLast" scope="row">
+<div class="block">插件資源管理器</div>
+</th>
+</tr>
+<tr id="i50" class="altColor">
+<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/managers/ResourceManager.Type.html" title="enum in com.hypernite.mc.hnmc.core.managers">ResourceManager.Type</a></td>
+<th class="colLast" scope="row">
+<div class="block">插件資源類別</div>
+</th>
+</tr>
+<tr id="i51" class="rowColor">
+<td class="colFirst"><a href="com/hypernite/mc/hnmc/core/exception/ResourceNotFoundException.html" title="class in com.hypernite.mc.hnmc.core.exception">ResourceNotFoundException</a></td>
+<th class="colLast" scope="row">&nbsp;</th>
+</tr>
+<tr id="i52" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/managers/SQLDataSource.html" title="interface in com.hypernite.mc.hnmc.core.managers">SQLDataSource</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/managers/TabListManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">TabListManager</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/utils/Tools.html" title="class in com.hypernite.mc.hnmc.core.utils">Tools</a></td>
 <th class="colLast" scope="row">
 <div class="block">Normal Tools</div>
 </th>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/utils/Utils.html" title="class in com.hypernite.mc.hnmc.core.utils">Utils</a></td>
 <th class="colLast" scope="row">
 <div class="block">Normal Utils</div>
 </th>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/managers/VaultAPI.html" title="interface in com.hypernite.mc.hnmc.core.managers">VaultAPI</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/misc/world/WorldException.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldException</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/misc/world/WorldExistException.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldExistException</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/misc/world/WorldLoadedException.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldLoadedException</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/managers/WorldManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">WorldManager</a></td>
 <th class="colLast" scope="row">
 <div class="block">用於取代 Multiverse-Core</div>
 </th>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/misc/world/WorldNonExistException.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldNonExistException</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/misc/world/WorldProperties.html" title="class in com.hypernite.mc.hnmc.core.misc.world">WorldProperties</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><a href="com/hypernite/mc/hnmc/core/managers/YamlManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">YamlManager</a></td>
 <th class="colLast" scope="row">
 <div class="block">新的 Config 管理器</div>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -239,21 +239,28 @@ implements <a href="../HyperNiteMCAPI.html" title="interface in com.hypernite.mc
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../managers/ResourceManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">ResourceManager</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getResourceManager(com.hypernite.mc.hnmc.core.managers.ResourceManager.Type)">getResourceManager</a></span>&#8203;(<a href="../managers/ResourceManager.Type.html" title="enum in com.hypernite.mc.hnmc.core.managers">ResourceManager.Type</a>&nbsp;type)</code></th>
+<td class="colLast">
+<div class="block">插件版本管理</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../managers/SQLDataSource.html" title="interface in com.hypernite.mc.hnmc.core.managers">SQLDataSource</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSQLDataSource()">getSQLDataSource</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../managers/TabListManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">TabListManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTabListManager()">getTabListManager</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../managers/VaultAPI.html" title="interface in com.hypernite.mc.hnmc.core.managers">VaultAPI</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVaultAPI()">getVaultAPI</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../managers/WorldManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">WorldManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWorldManager()">getWorldManager</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -508,7 +515,7 @@ implements <a href="../HyperNiteMCAPI.html" title="interface in com.hypernite.mc
 <a id="getEventCancelManager()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getEventCancelManager</h4>
 <pre class="methodSignature">public&nbsp;<a href="../managers/EventCancelManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">EventCancelManager</a>&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/main/HyperNiteMC.html#line.81">getEventCancelManager</a>()</pre>
@@ -519,6 +526,25 @@ implements <a href="../HyperNiteMCAPI.html" title="interface in com.hypernite.mc
 <dd><code><a href="../HyperNiteMCAPI.html#getEventCancelManager()">getEventCancelManager</a></code>&nbsp;in interface&nbsp;<code><a href="../HyperNiteMCAPI.html" title="interface in com.hypernite.mc.hnmc.core">HyperNiteMCAPI</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>事件取消管理器</dd>
+</dl>
+</li>
+</ul>
+<a id="getResourceManager(com.hypernite.mc.hnmc.core.managers.ResourceManager.Type)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getResourceManager</h4>
+<pre class="methodSignature">public&nbsp;<a href="../managers/ResourceManager.html" title="interface in com.hypernite.mc.hnmc.core.managers">ResourceManager</a>&nbsp;<a href="../../../../../../src-html/com/hypernite/mc/hnmc/core/main/HyperNiteMC.html#line.86">getResourceManager</a>&#8203;(<a href="../managers/ResourceManager.Type.html" title="enum in com.hypernite.mc.hnmc.core.managers">ResourceManager.Type</a>&nbsp;type)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../HyperNiteMCAPI.html#getResourceManager(com.hypernite.mc.hnmc.core.managers.ResourceManager.Type)">HyperNiteMCAPI</a></code></span></div>
+<div class="block">插件版本管理</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../HyperNiteMCAPI.html#getResourceManager(com.hypernite.mc.hnmc.core.managers.ResourceManager.Type)">getResourceManager</a></code>&nbsp;in interface&nbsp;<code><a href="../HyperNiteMCAPI.html" title="interface in com.hypernite.mc.hnmc.core">HyperNiteMCAPI</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - 管理器類別</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>插件版本管理器</dd>
 </dl>
 </li>
 </ul>
